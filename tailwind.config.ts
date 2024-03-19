@@ -8,13 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        custom: ['Josefin Sans', 'Sans-Serif']
+      },
+      colors: {
+        'Eggshell':'#f1f1de',
+        'Sky': '#abc8e7',
+        'Chocolate': '#402020'
       },
     },
+    screens: {
+
+      'mobile': {'max': '767px'},
+      // => @media (min-width: 350px and max-width: 767px) { ... }
+
+      'tablet': {'max': '1023px'},
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+      'desktop': {'min': '1024px'},
+      // => @media (min-width: 1024px and max-width: 1279px) { ... }
+    }
   },
+  
   plugins: [],
-};
-export default config;
+}
+
+export default config
