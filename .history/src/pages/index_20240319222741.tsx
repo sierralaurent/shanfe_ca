@@ -14,10 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className={'sticky top-0 z-50'}>
+      <div className={'sticky top-0 z-50'}>
         <NavBar />
       </div>
-    <div className='flex flex-col items-center'>
       <Image
         className='w-full relative'
         src='/images/Shanfe_Hero.png'
@@ -25,7 +24,7 @@ export default function Home() {
         height={2000}
         alt=''
         />
-    <main className={`flex flex-col items-center gap-20 p-10 max-w-7xl mobile:p-8`}>
+    <main className={`flex flex-col items-center gap-20 p-10 mobile:p-8 bg-White`}>
       <Image
       src='/LogoMark300ppi.png'
       width={200}
@@ -41,12 +40,11 @@ export default function Home() {
           </div>
       </div>
 
-
+      <div className='max-w-7xl p-8 flex flex-col gap-20'>
       <div className='w-full flex flex-col items-start'>
       <Card />
       </div>
         <h1 className=" w-full flex flex-col items-start text-5xl font-bold">And More</h1>
-
         <div className="w-full flex flex-row justify-between">
           <div className="w-80 flex flex-col gap-5 items-center">
             <Image
@@ -76,9 +74,9 @@ export default function Home() {
               <h1 className="font-bold text-xl text-center">Research Design including ethics approval application, grant submissions, project management</h1>
           </div>
         </div>
+        </div>
       <Footer />
     </main>
-    </div>
     </>
   );
 }

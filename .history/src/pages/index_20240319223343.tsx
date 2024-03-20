@@ -25,7 +25,7 @@ export default function Home() {
         height={2000}
         alt=''
         />
-    <main className={`flex flex-col items-center gap-20 p-10 max-w-7xl mobile:p-8`}>
+    <main className={`flex flex-col items-center gap-20 p-10 max-w-7xl mobile:p-8 bg-Eggshell`}>
       <Image
       src='/LogoMark300ppi.png'
       width={200}

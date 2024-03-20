@@ -14,10 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className={'sticky top-0 z-50'}>
+      <div className={'sticky top-0 z-50'}>
         <NavBar />
       </div>
-    <div className='flex flex-col items-center'>
       <Image
         className='w-full relative'
         src='/images/Shanfe_Hero.png'
@@ -25,7 +24,7 @@ export default function Home() {
         height={2000}
         alt=''
         />
-    <main className={`flex flex-col items-center gap-20 p-10 max-w-7xl mobile:p-8`}>
+    <main className={`flex flex-col items-center gap-20 p-10 max-w-7xl mobile:p-8 bg-White`}>
       <Image
       src='/LogoMark300ppi.png'
       width={200}
@@ -78,7 +77,6 @@ export default function Home() {
         </div>
       <Footer />
     </main>
-    </div>
     </>
   );
 }
