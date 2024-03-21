@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
-import Image from 'next/image'
+import Image from 'next/image';
 
 interface ButtonProps {
   backgroundColor: string;
-  onClick?: () => void; // Add onClick prop
   children: string;
+  onClick?: () => void; // Add onClick prop
 }
 
-export default function Button({ backgroundColor, onClick, children }: ButtonProps) {
+export default function Button({ backgroundColor, children, onClick }: ButtonProps) {
   return (
-    <button
+    <motion.button
       onClick={onClick} // Attach onClick handler
       className={`flex flex-row items-center gap-3 w-fit text-Chocolate p-3 text-2xl rounded-xl font-bold cursor-pointer bg-${backgroundColor}`}
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
       <Image
         className=''
@@ -21,6 +23,6 @@ export default function Button({ backgroundColor, onClick, children }: ButtonPro
         alt=''
       />
       {children}
-    </button>
+    </motion.button>
   );
 }
