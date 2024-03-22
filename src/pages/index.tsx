@@ -8,6 +8,7 @@ import Card02 from "@/components/card02";
 import Card03 from "@/components/card03";
 import Card04 from "@/components/card04";
 import Card05 from "@/components/card05";
+import ScrollToTopButton from "@/components/scrollToTop";
 
 
 export default function Home() {
@@ -23,8 +24,15 @@ export default function Home() {
       </div>
     <div className='flex flex-col items-center'>
       <Image
-        className='w-full relative'
+        className='w-full relative tablet:hidden'
         src='/images/Shanfe_Hero.png'
+        width={2000}
+        height={2000}
+        alt=''
+        />
+        <Image
+        className='desktop:hidden w-full relative'
+        src='/images/Shanfe_Hero_Phone.png'
         width={2000}
         height={2000}
         alt=''
@@ -62,14 +70,65 @@ export default function Home() {
       <div className='w-full flex flex-col items-start'> 
         <Card05 />
         </div>
-      <h1 className='text-5xl font-bold'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
+      <h1 className='text-5xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
+        <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-5 tablet:items-center'>
+            <Image
+              className=' '
+              src='/Icons/SVG/logo01.svg'
+              width={300}
+              height={100}
+              alt=''
+              />
+              <Image
+              className=' '
+              src='/Icons/SVG/logo02.svg'
+              width={400}
+              height={300}
+              alt=''
+              />
+              
+              <Image
+              className=' '
+              src='/Icons/logo06.png'
+              width={300}
+              height={300}
+              alt=''
+              />
+          
+        </div>
         <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-10 tablet:items-center'>
-          
+          <Image
+              className=' '
+              src='/Icons/SVG/logo03.svg'
+              width={300}
+              height={300}
+              alt=''
+              />
+              <Image
+              className=' '
+              src='/Icons/SVG/logo04.svg'
+              width={200}
+              height={300}
+              alt=''
+              />
+              <Image
+              className=' '
+              src='/Icons/SVG/logo05.svg'
+              width={300}
+              height={300}
+              alt=''
+              />
         </div>
-        <div className='flex flex-row content-start w-full justify-between'>
-          
+        <div className='flex flex-col w-full items-center'>
+        <Image
+              className=' '
+              src='/Icons/logo07.png'
+              width={300}
+              height={300}
+              alt=''
+              />
         </div>
-
+        <ScrollToTopButton />
       <Footer />
     </main>
     </div>
