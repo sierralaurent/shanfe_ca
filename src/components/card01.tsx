@@ -14,10 +14,10 @@ export default function Card01() {
     };
 
     return (
-        <div className="text-Chocolate flex flex-row gap bg-Eggshell items-center p-10 gap-10 rounded-3xl relative">
+        <div className="text-Chocolate flex flex-row gap bg-Eggshell items-center p-10 gap-10 rounded-3xl relative mobile:flex-col">
             <Image
                 className="rounded-3xl"
-                src='/images/photo01.jpg'
+                src='/images/photo01.png'
                 width={350}
                 height={350}
                 alt=''

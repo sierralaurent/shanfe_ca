@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className='items-end text-right'>
                     <h1 className='text-xl'>Shanfe Research and Consulting Ltd.</h1>
                     <h1 className='text-xl'>North Vancouver, B.C.</h1>
-                    <h1 className='text-xl'>info@shanfe.ca</h1>
+                    <h1 className='text-xl'>sherri@shanfe.ca</h1>
                     <h1 className='text-xl'>(604) 802-7069</h1>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Button from "./button";
 
-export default function Card02() {
+export default function Card04() {
     const [expanded, setExpanded] = useState(false);
 
     const handleExpand = () => {
@@ -19,7 +19,7 @@ export default function Card02() {
             {expanded ? (
                 <div className='w-full flex flex-col gap-5'>
                     <p className='text-lg'>
-                    We specialize in comprehensive safety solutions tailored to hyperbaric environments. We conduct thorough risk assessments of facilities, identifying potential hazards and implementing robust safety protocols. From preventative maintenance to safety program development, we ensure compliance with industry standards and regulations, safeguarding the well-being of your personnel and facilities. 
+                    We are partnered with Sea-force Hyperbaric a full saturation depth chamber with environmental control to provide life support for 24 persons. We offer equipment evaluation in hyperbaric and diving conditions, along with physiological monitoring of divers in the chamber or in open water conditions including diver profile monitoring, 12 lead ECG, 4 chamber Echocardiogram for venous gas emboli monitoring, and phlebotomy. With 3 decades of experience in diving operations we can tailor research to meet your needs.  Previous grants for diver research include U.S. Office of Naval Research and Worksafe  BC. 
                     </p>
                     <button onClick={handleClose} className="absolute top-5 left-5 text-gray-500 hover:text-red-500 focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -29,13 +29,13 @@ export default function Card02() {
                 </div>
             ) : (
                 <div className='flex flex-col gap-5 items-end'>
-                    <h1 className='text-5xl font-bold'>Safety</h1>
+                    <h1 className='text-5xl font-bold'>Diving</h1>
                     <Button backgroundColor="Eggshell" onClick={handleExpand}>Read More</Button>
                 </div>
             )}
             <Image
                 className="rounded-3xl"
-                src='/images/photo02.png'
+                src='/images/photo04.png'
                 width={350}
                 height={350}
                 alt=''

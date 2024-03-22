@@ -23,8 +23,7 @@ export default function About() {
         alt=''
         />
       <main className={`flex flex-col items-center p-24 mobile:p-8 bg-white`}>
-        <h1 className={`text-xl`}>About Sherri</h1>
-        <Button backgroundColor='Sky'>Read More</Button>
+
         <Footer />
       </main>
     </>
