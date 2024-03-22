@@ -64,30 +64,7 @@ export default function Home() {
         </div>
       <h1 className='text-5xl font-bold'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
         <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-10 tablet:items-center'>
-          <Image
-          src='/Icons/logo01.png'
-          width={250}
-          height={150}
-          alt=''
-        />
-        <Image
-          src='/Icons/logo03.png'
-          width={250}
-          height={250}
-          alt=''
-        />
-        <Image
-            src='/Icons/logo07.png'
-            width={250}
-            height={250}
-            alt=''
-          />
-          <Image
-            src='/Icons/logo06.png'
-            width={250}
-            height={250}
-            alt=''
-          />
+          
         </div>
         <div className='flex flex-row content-start w-full justify-between'>
           
