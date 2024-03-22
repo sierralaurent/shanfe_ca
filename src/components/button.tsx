@@ -11,7 +11,7 @@ export default function Button({ backgroundColor, children, onClick }: ButtonPro
   return (
     <motion.button
       onClick={onClick} // Attach onClick handler
-      className={`flex flex-row items-center gap-3 min-w-min text-Chocolate p-3 text-2xl rounded-xl font-bold cursor-pointer bg-${backgroundColor}`}
+      className={`flex flex-row items-center gap-3 min-w-min text-Chocolate max-w-fit p-3 text-2xl rounded-xl font-bold cursor-pointer bg-${backgroundColor}`}
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >

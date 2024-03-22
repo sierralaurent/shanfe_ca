@@ -120,7 +120,9 @@ export default function About() {
                 <p className='text-lg'>Sherri is the current Chair of the Canadian Standard for work in compressed air environments (CSA Z275.1) and is the Vice-Chair of the CSA Technical Committee for Diving and Hyperbaric Operations. She is past-president of the Canadian Association for Underwater Science and serves and a safety and standards advisor to their executive board. She is a member of the Training Advisory Council for International Training and a member of the safety committee for the Undersea and Hyperbaric Medical Society.</p>
                 </div>
           </div>
-          
+          <div className='flex items-center w-full flex-col'>
+          <Button backgroundColor="Sky">Download C.V. Document</Button>
+          </div>
         </div>
         <ScrollToTopButton />
         <Footer />
