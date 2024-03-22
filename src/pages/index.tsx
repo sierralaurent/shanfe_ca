@@ -122,7 +122,7 @@ export default function Home() {
         <div className='flex flex-col w-full items-center'>
         <Image
               className=' '
-              src='/Icons/SVG/logo07.svg'
+              src='/Icons/SVG/Logo07.svg'
               width={300}
               height={300}
               alt=''
