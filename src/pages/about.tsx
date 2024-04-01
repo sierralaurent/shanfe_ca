@@ -33,7 +33,7 @@ export default function About() {
       <main className={`flex flex-col items-center p-24 mobile:p-8 bg-white`}>
         <div className='flex flex-col max-w-7xl w-full gap-16 pb-24'>
           <div className='flex flex-col items-center'>
-            <h1 className="text-4xl font-bold">To Summarize Sherri's 20+ Years of Experience…</h1>
+            <h1 className="text-4xl font-bold">To Summarize Sherri's 30+ Years of Experience…</h1>
             </div>
           <div className={'max-w-7xl flex flex-col items-start mobile:flex-col gap-20 '}>
             <div className='max-w-xl'>
@@ -59,9 +59,9 @@ export default function About() {
             <h1 className='text-4xl font-bold'>Education</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
                 <Image
-                    className=''
-                    src='/Icons/School-Icon.png'
-                    width={120}
+                    className='rounded-3xl'
+                    src='/images/photo08.png'
+                    width={200}
                     height={100}
                     alt=''
                     />
@@ -72,9 +72,9 @@ export default function About() {
             <h1 className='text-4xl font-bold'>Teaching and Speaking Engagements</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
                 <Image
-                    className=''
-                    src='/Icons/Speaking Icon.png'
-                    width={120}
+                    className='rounded-3xl'
+                    src='/images/photo07.png'
+                    width={200}
                     height={100}
                     alt=''
                     />
@@ -85,9 +85,9 @@ export default function About() {
             <h1 className='text-4xl font-bold'>Research and Publications</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
                 <Image
-                    className=''
-                    src='/Icons/Research-Icon.png'
-                    width={120}
+                    className='rounded-3xl'
+                    src='/images/photo09.png'
+                    width={200}
                     height={100}
                     alt=''
                     />
@@ -98,9 +98,9 @@ export default function About() {
             <h1 className='text-4xl font-bold'>Awards and Recognitions</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
                 <Image
-                    className=''
-                    src='/Icons/Award Icon.png'
-                    width={120}
+                    className='rounded-3xl'
+                    src='/images/photo10.png'
+                    width={200}
                     height={100}
                     alt=''
                     />
@@ -111,9 +111,9 @@ export default function About() {
             <h1 className='text-4xl font-bold'>Community Service and Leadership</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
                 <Image
-                    className=''
-                    src='/Icons/Community Icon.png'
-                    width={120}
+                    className='rounded-3xl'
+                    src='/images/photo13.png'
+                    width={200}
                     height={100}
                     alt=''
                     />

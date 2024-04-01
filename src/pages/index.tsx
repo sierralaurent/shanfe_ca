@@ -99,7 +99,7 @@ export default function Home() {
         <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-10 tablet:items-center'>
           <Image
               className=' '
-              src='/Icons/SVG/logo03.svg'
+              src='/Icons/SVG/logo08.svg'
               width={300}
               height={300}
               alt=''
