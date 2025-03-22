@@ -35,13 +35,11 @@ export default function About() {
           <div className='flex flex-col items-center'>
             <h1 className="text-4xl font-bold">To Summarize Sherri's 30+ Years of Experience…</h1>
             </div>
-          <div className={'max-w-7xl flex flex-col items-start mobile:flex-col gap-20 '}>
+          <div className={'max-w-7xl flex flex-row items-start mobile:flex-col gap-20 mobile:gap-5'}>
             <div className='max-w-xl'>
               <p className='text-lg'>An esteemed professional with a rich background in aerospace and diving research, hyper/hypobaric and diving safety. With a passion for exploration and a dedication to advancing knowledge in her field, Sherri has made significant contributions to academia, research, and community service.</p>
               </div>
-          </div>
-          <div className={'max-w-7xl flex flex-col items-end mobile:flex-col gap-20'}>
-            <div className='max-w-xl items-end'>
+              <div className='max-w-xl items-end'>
               <p className='text-lg'>Sherri's career spans over three decades, during which she has held various leadership roles and conducted research in aerospace and diving physiology along with expertise in hyper/hypobaric and diving safety. Her expertise and commitment to excellence have earned her recognition and accolades from esteemed organizations in her field.</p>
               </div>
           </div>
@@ -56,19 +54,6 @@ export default function About() {
               <p className='text-3xl font-bold'>Sherri is driven by a mission to enhance safety and understanding in high-pressure environments, striving to improve the health and well-being of individuals working in challenging conditions.</p>
           </div>
           <div className='flex flex-col w-full gap-10 bg-Eggshell rounded-3xl p-10 '>
-            <h1 className='text-4xl font-bold'>Education</h1>
-              <div className='flex flex-row items-center gap-10 mobile:flex-col'>
-                <Image
-                    className='rounded-3xl'
-                    src='/images/photo08.png'
-                    width={200}
-                    height={100}
-                    alt=''
-                    />
-                <p className='text-lg'>Sherri holds a Master of Science in Biomedical Physiology and has served as the President of Shanfe Research & Consulting Ltd. since 2022, where she leads initiatives in research and risk management. Prior to this, she held roles as Director of the Environmental Medicine & Physiology Unit at Simon Fraser University and Diving Safety Officer at both the University of British Columbia and the University of Victoria.</p>
-                </div>
-          </div>
-          <div className='flex flex-col w-full gap-10 rounded-3xl p-10 '>
             <h1 className='text-4xl font-bold'>Teaching and Speaking Engagements</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
                 <Image
@@ -79,6 +64,19 @@ export default function About() {
                     alt=''
                     />
                 <p className='text-lg'>Sherri is an experienced educator, having taught courses at Simon Fraser University, the University of British Columbia, and other institutions. She has delivered guest lectures at prestigious conferences and institutions worldwide, sharing her expertise on topics ranging from occupational diving to environmental medicine.</p>
+                </div>
+          </div>
+          <div className='flex flex-col w-full gap-10 rounded-3xl p-10 '>
+            <h1 className='text-4xl font-bold'>Education</h1>
+              <div className='flex flex-row items-center gap-10 mobile:flex-col'>
+                <Image
+                    className='rounded-3xl'
+                    src='/images/photo08.png'
+                    width={200}
+                    height={100}
+                    alt=''
+                    />
+                <p className='text-lg'>Sherri holds a Master of Science in Biomedical Physiology and has served as the President of Shanfe Research & Consulting Ltd. since 2022, where she leads initiatives in research and risk management. Prior to this, she held roles as Director of the Environmental Medicine & Physiology Unit at Simon Fraser University and Diving Safety Officer at both the University of British Columbia and the University of Victoria.</p>
                 </div>
           </div>
           <div className='flex flex-col w-full gap-10 bg-Sky rounded-3xl p-10 '>
