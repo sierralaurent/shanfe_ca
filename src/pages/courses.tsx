@@ -4,6 +4,7 @@ import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Button from "@/components/button";
 import ScrollToTopButton from "@/components/scrollToTop";
+import Link from 'next/link';
 
 type Course = {
   title: string;
@@ -65,12 +66,14 @@ export default function Courses() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={'sticky top-0 z-50'}>
+
+      <div className="sticky top-0 z-50">
         <NavBar />
       </div>
 
       <main className="flex flex-col items-center p-24 pb-20 pt-20 mobile:p-8 bg-white w-full">
-        <div className="max-w-5xl w-full">
+        <div className="w-full max-w-5xl">
+
           <h1 className="text-4xl font-bold mb-6 text-center">Hyperbaric Operations Training</h1>
           <p className="mb-4">
             Welcome to Shanfe Research and Consulting Ltd.'s professional training programs for individuals
@@ -86,7 +89,7 @@ export default function Courses() {
           </ul>
           <p className="mb-6">
             All certification pathways begin with the <strong>Chamber Core Competency</strong> course. From there,
-            students can pursue specialty certifications. All programs are eligible for certification by the
+            students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
 
@@ -104,7 +107,17 @@ export default function Courses() {
               <tbody>
                 {courses.map((course, index) => (
                   <tr key={index}>
-                    <td className="px-4 py-2 border">{course.title}</td>
+                    <td className="px-4 py-2 border">
+                      {index === 0 ? (
+                        <Link href="/chamber-core-competency" passHref>
+                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
+                            {course.title}
+                          </span>
+                        </Link>
+                      ) : (
+                        course.title
+                      )}
+                    </td>
                     <td className="px-4 py-2 border">{course.dates}</td>
                     <td className="px-4 py-2 border">{course.format}</td>
                     <td className="px-4 py-2 border">{course.tuition}</td>
@@ -131,8 +144,14 @@ export default function Courses() {
           </ul>
 
           <div className="text-center">
-            
+            <p className="text-2xl font-bold mb-6 p-20">
+              Please email <a href="mailto:mechal@shanfe.ca" className="text-blue-600 underline hover:text-blue-800">mechal@shanfe.ca</a> to register or call <a href="tel:+16048027069" className="text-blue-600 underline hover:text-blue-800">+1-604-802-7069</a>
+            </p>
           </div>
+        </div>
+
+        <div className="pb-20">
+          <Link href="/"><Button backgroundColor="Eggshell">Back</Button></Link>
         </div>
 
         <ScrollToTopButton />
