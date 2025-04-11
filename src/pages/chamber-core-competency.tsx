@@ -4,6 +4,7 @@ import Footer from '@/components/footer';
 import Button from '@/components/button';
 import ScrollToTopButton from '@/components/scrollToTop';
 import Link from 'next/link';
+import Script from "next/script";
 
 export default function ChamberCoreCompetencyPage() {
   return (
@@ -13,7 +14,22 @@ export default function ChamberCoreCompetencyPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <>
+      {/* Google Tag Manager Script */}
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-R38974EDZ7"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-R38974EDZ7');
+        `}
+      </Script>
+    </>
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
