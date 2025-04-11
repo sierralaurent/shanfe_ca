@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import Button from "./button";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function Card003() {
   const [expanded, setExpanded] = useState(false);
@@ -12,6 +14,13 @@ export default function Card003() {
   const handleClose = () => {
     setExpanded(false);
   };
+
+  const router = useRouter();
+  
+      // Function to determine if a link is active
+      const isLinkActive = (href: string) => {
+          return router.pathname === href;
+      };
 
   return (
     <div className="text-Chocolate flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl relative mobile:flex-col">
@@ -50,6 +59,7 @@ export default function Card003() {
                         <li>Fundamentals of Hyperbaric Medicine (UHMS)</li>
                         <li>Hyperbaric emergency team training</li>
                         <li>High altitude indoctrination (Transport Canada)</li>
+                        <Link href="/courses"><Button backgroundColor="Sky" onClick={handleExpand}>See Courses</Button></Link>
                         </div>
 
           </div>
