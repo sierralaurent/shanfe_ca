@@ -18,13 +18,9 @@ export default function ChamberCoreCompetencyPage() {
         <NavBar />
       </div>
 
-      <main className="flex flex-col items-center p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
-        <div className="w-full max-w-5xl">
-
-          {/* Title */}
+      <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
+        <div className="flex flex-col w-full max-w-5xl">
           <h1 className="text-4xl font-bold mb-6">Chamber Operator Core Competencies</h1>
-
-          {/* Description */}
           <p className="mb-4">
             This course can be combined with one of our other online courses to be eligible for certification as a clinical chamber operator, or certification as an operator in support of occupational diving or tunnel operations, or towards certification to operate the SOS system evacuation chamber. 
             <br /><br />
@@ -33,28 +29,28 @@ export default function ChamberCoreCompetencyPage() {
 
           <div className="flex flex-col gap-1">
             <div className="content-center items-center">
-          <h2 className="text-2xl font-semibold mt-5 mb-2">Pre-requisites</h2>
+          <h2 className="text-2xl font-semibold ">Pre-requisites</h2>
           <p className="mb-4">None.</p>
           </div>
           <div className="content-center">
-          <h2 className="text-2xl font-semibold mt-5 mb-2">Duration</h2>
+          <h2 className="text-2xl font-semibold">Duration</h2>
           <p className="mb-4">7 days in person</p>
           </div>
           
           <div className="content-center">
-          <h2 className="text-2xl font-semibold mt-5 mb-2">Location</h2>
-          <p className="mb-4">SeaForce Hyperbaric, St. John’s, Newfoundland</p>
+          <h2 className="text-2xl font-semibold">Location</h2>
+          <p className="mb-4">SeaForce Hyperbaric, St. John’s, Newfoundland, Canada</p>
           </div>
           <div className="content-center">
-          <h2 className="text-2xl font-semibold mt-5 mb-2">Dates</h2>
+          <h2 className="text-2xl font-semibold">Dates</h2>
           <p className="mb-4">May 11–17, 2025</p>
           </div>
           <div className="content-center">
-          <h2 className="text-2xl font-semibold mt-5 mb-2">Cost</h2>
+          <h2 className="text-2xl font-semibold ">Cost</h2>
           <p className="mb-4">$3,000.00</p>
           </div>
           </div>
-          <h2 className="text-2xl font-semibold mt-5 mb-2">Topics Covered</h2>
+          <h2 className="text-2xl font-semibold mt-4 mb-2">Topics Covered</h2>
           <ul className="list-disc list-inside mb-6">
             <li>Hands-on operation of a hyperbaric chamber including start-up and shut-down procedures</li>
             <li>Operation of treatment tables, diving tables, and SUR-D-O₂ tables</li>
