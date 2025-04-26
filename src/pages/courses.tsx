@@ -3,6 +3,8 @@ import Head from 'next/head';
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Button from "@/components/button";
+import Course01 from "@/components/course01";
+import Course02 from "@/components/course02";
 import ScrollToTopButton from "@/components/scrollToTop";
 import Link from 'next/link';
 import Script from "next/script";
@@ -22,7 +24,7 @@ const courses: Course[] = [
     tuition: '$3,000',
   },
   {
-    title: 'Clinical Hyperbaric Medicine',
+    title: 'HCO - Clinical Hyperbaric Medicine',
     dates: 'Monthly',
     format: 'Online (5 days)',
     tuition: '$975',
@@ -52,7 +54,7 @@ const courses: Course[] = [
     tuition: '$500',
   },
   {
-    title: 'SOS Hyperlite Evacuation Chamber',
+    title: 'HCO - SOS Hyperlite Evacuation Chamber',
     dates: 'TBD',
     format: 'In Person (2 days)',
     tuition: '$1,800',
@@ -110,7 +112,11 @@ export default function Courses() {
           </p>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4">2025 Course Offerings</h2>
-          <div className="overflow-x-auto mb-8">
+          <div>
+            <div className="flex flex-row w-full justify-center gap-20 p-20">
+            <Course01/>
+            <Course02/>
+            </div>
             <table className="w-full table-auto border-collapse border border-gray-300">
               <thead className="bg-gray-100">
                 <tr>
@@ -126,6 +132,24 @@ export default function Courses() {
                     <td className="px-4 py-2 border">
                       {index === 0 ? (
                         <Link href="/chamber-core-competency" passHref>
+                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
+                            {course.title}
+                          </span>
+                        </Link>
+                      ) : index === 3 ? ( // This is the second course
+                        <Link href="/tunnel-operations" passHref>
+                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
+                            {course.title}
+                          </span>
+                        </Link>
+                      ) : index === 1 ? ( // This is the second course
+                        <Link href="/hyperbaric-medicine" passHref>
+                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
+                            {course.title}
+                          </span>
+                        </Link>
+                      ) : index === 2 ? ( // This is the second course
+                        <Link href="/diving-operations" passHref>
                           <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
                             {course.title}
                           </span>

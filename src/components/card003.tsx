@@ -41,7 +41,7 @@ export default function Card003() {
                     </p>
                     <div className='flex flex-col gap-6'>
                         <Link href="/courses"><Button backgroundColor="Sky">Hyperbaric Courses</Button></Link>
-                        <Button backgroundColor="Sky">High Altitude Courses - Coming Soon</Button>
+                        <Button backgroundColor="Sky">High Altitude Courses *Coming Soon*</Button>
                         </div>
 
           </div>

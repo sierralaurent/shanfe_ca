@@ -13,19 +13,23 @@ export default function NavBar() {
     return (
         <>
             <div className={'w-full flex flex-row justify-between items-center p-5 text-Chocolate'}>
+                <Link href="/">
                 <Image
                     className='hover:scale-110 transition-transform'
                     src='/LogoMark300ppi.png'
                     width={150}
                     height={150}
                     alt=''
-                />
+                /></Link>
                 <div className={'flex flex-row gap-10'}>
                     <Link href="/">
                         <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/') ? 'underline' : ''}`}>Services</h1>
                     </Link>
                     <Link href="/about">
                         <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/about') ? 'underline' : ''}`}>About</h1>
+                    </Link>
+                    <Link href="/courses">
+                        <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/courses') ? 'underline' : ''}`}>Courses</h1>
                     </Link>
                     
                 </div>
