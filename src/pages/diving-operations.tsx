@@ -5,6 +5,7 @@ import Button from '@/components/button';
 import ScrollToTopButton from '@/components/scrollToTop';
 import Link from 'next/link';
 import Script from "next/script";
+import Image from "next/image";
 
 export default function DivingOperationsPage() {
   return (
@@ -33,10 +34,19 @@ export default function DivingOperationsPage() {
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
+      <div className='flex flex-col items-center'>
+            <Image
+              className='w-full relative'
+              src='/images/ODS.png'
+              width={2000}
+              height={2000}
+              alt=''
+              />
+              </div>
 
       <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
         <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-4xl font-bold mb-6">Hyperbaric Chamber Operator – Occupational Diving
+          <h1 className="text-2xl font-bold mb-6">Hyperbaric Chamber Operator – Occupational Diving
           Support</h1>
           <p className="mb-4">
           This blended learning course prepares participants to support unrestricted surface-supplied mixed gas diving operations. It includes online instruction and hands-on training at one of our partner diving schools. 

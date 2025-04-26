@@ -5,6 +5,7 @@ import Button from '@/components/button';
 import ScrollToTopButton from '@/components/scrollToTop';
 import Link from 'next/link';
 import Script from "next/script";
+import Image from "next/image";
 
 export default function ChamberCoreCompetencyPage() {
   return (
@@ -33,10 +34,19 @@ export default function ChamberCoreCompetencyPage() {
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
+<div className='flex flex-col items-center'>
+      <Image
+        className='w-full relative'
+        src='/images/COCC2.png'
+        width={2000}
+        height={2000}
+        alt=''
+        />
+        </div>
 
       <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
         <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-4xl font-bold mb-6">Chamber Operator Core Competencies</h1>
+          <h1 className="text-3xl font-bold mb-6">Chamber Operator Core Competencies</h1>
           <p className="mb-4">
             This course can be combined with one of our other online courses to be eligible for certification as a clinical chamber operator, or certification as an operator in support of occupational diving or tunnel operations, or towards certification to operate the SOS system evacuation chamber. 
             <br /><br />

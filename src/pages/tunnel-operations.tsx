@@ -5,6 +5,7 @@ import Button from '@/components/button';
 import ScrollToTopButton from '@/components/scrollToTop';
 import Link from 'next/link';
 import Script from "next/script";
+import Image from "next/image";
 
 export default function TunnelOperationsPage() {
   return (
@@ -33,7 +34,15 @@ export default function TunnelOperationsPage() {
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
-
+      <div className='flex flex-col items-center'>
+                  <Image
+                    className='w-full relative'
+                    src='/images/TOS.png'
+                    width={2000}
+                    height={2000}
+                    alt=''
+                    />
+                    </div>
       <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
         <div className="flex flex-col w-full max-w-5xl">
           <h1 className="text-4xl font-bold mb-6">Hyperbaric Chamber Operator – Tunnel Operations

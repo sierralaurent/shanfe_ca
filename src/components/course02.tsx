@@ -17,7 +17,7 @@ export default function Course02() {
 
                 <div className='flex flex-col items-center gap-5'>
                     <h1 className='text-2xl font-bold'>HCO - Clinical Hyperbaric Medicine</h1>
-                    <h2 className='text-lg font-bold'>Ran Monthly</h2>
+                    <h2 className='text-lg font-bold'>Monthly</h2>
                     <h2 className='text-lg'>Online</h2>
                     <Link href="/hyperbaric-medicine"><Button backgroundColor="Eggshell">See Syllabus</Button></Link>
                 </div>
