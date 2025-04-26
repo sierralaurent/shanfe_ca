@@ -114,7 +114,7 @@ export default function ChamberCoreCompetencyPage() {
 
         {/* Back button at bottom */}
         <div className="pt-12 pb-20">
-          <Link href="/courses"><Button backgroundColor="Eggshell">Back to Courses</Button></Link>
+          <Link href="/courses"><Button backgroundColor="Eggshell">Back to All Courses</Button></Link>
         </div>
 
         <ScrollToTopButton />

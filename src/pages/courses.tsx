@@ -5,6 +5,12 @@ import Footer from "@/components/footer";
 import Button from "@/components/button";
 import Course01 from "@/components/course01";
 import Course02 from "@/components/course02";
+import Course03 from "@/components/course03";
+import Course04 from "@/components/course04";
+import Course05 from "@/components/course05";
+import Course06 from "@/components/course06";
+import Course07 from "@/components/course07";
+import Course08 from "@/components/course08";
 import ScrollToTopButton from "@/components/scrollToTop";
 import Link from 'next/link';
 import Script from "next/script";
@@ -92,97 +98,46 @@ export default function Courses() {
       <main className="flex flex-col items-center p-24 pb-20 pt-20 mobile:p-8 bg-white w-full">
         <div className="w-full max-w-5xl">
 
-          <h1 className="text-4xl font-bold mb-6 text-center">Hyperbaric Operations Training</h1>
-          <p className="mb-4">
+          <h1 className="text-6xl font-bold mb-16 text-center">Hyperbaric Operations Training</h1>
+          <p className="mb-6 text-lg ">
             Welcome to Shanfe Research and Consulting Ltd.'s professional training programs for individuals
             seeking careers in hyperbaric operations. Our comprehensive courses prepare participants for
             a wide range of roles including:
           </p>
-          <ul className="list-disc list-inside mb-6">
+          <ul className="list-disc text-lg  list-inside mb-6">
             <li>Clinical hyperbaric medicine</li>
             <li>Diving operations</li>
             <li>Tunneling and construction support</li>
-            <li>Search and rescue with portable chambers</li>
-            <li>Research and technical operations</li>
+            <li>Emergency evacuation</li>
           </ul>
-          <p className="mb-6">
+          <p className="mb-6 text-xl ">
             All certification pathways begin with the <strong>Chamber Core Competency</strong> course. From there,
             students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
-
-          <h2 className="text-2xl font-semibold mt-10 mb-4">2025 Course Offerings</h2>
-          <div>
-            <div className="flex flex-row w-full justify-center gap-20 p-20">
+          <div className="flex flex-col items-center mb-5"> 
+          <h2 className="text-4xl font-semibold mt-10 mb-4">2025 Course Offerings</h2>
+            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
             <Course01/>
             <Course02/>
+            <Course03/>
             </div>
-            <table className="w-full table-auto border-collapse border border-gray-300">
-              <thead className="bg-gray-100">
-                <tr>
-                  <th className="px-4 py-2 border">Course</th>
-                  <th className="px-4 py-2 border">Dates</th>
-                  <th className="px-4 py-2 border">Format</th>
-                  <th className="px-4 py-2 border">Tuition</th>
-                </tr>
-              </thead>
-              <tbody>
-                {courses.map((course, index) => (
-                  <tr key={index}>
-                    <td className="px-4 py-2 border">
-                      {index === 0 ? (
-                        <Link href="/chamber-core-competency" passHref>
-                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
-                            {course.title}
-                          </span>
-                        </Link>
-                      ) : index === 3 ? ( // This is the second course
-                        <Link href="/tunnel-operations" passHref>
-                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
-                            {course.title}
-                          </span>
-                        </Link>
-                      ) : index === 1 ? ( // This is the second course
-                        <Link href="/hyperbaric-medicine" passHref>
-                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
-                            {course.title}
-                          </span>
-                        </Link>
-                      ) : index === 2 ? ( // This is the second course
-                        <Link href="/diving-operations" passHref>
-                          <span className="text-blue-600 underline hover:text-blue-800 cursor-pointer">
-                            {course.title}
-                          </span>
-                        </Link>
-                      ) : (
-                        course.title
-                      )}
-                    </td>
-                    <td className="px-4 py-2 border">{course.dates}</td>
-                    <td className="px-4 py-2 border">{course.format}</td>
-                    <td className="px-4 py-2 border">{course.tuition}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Additional Information</h3>
+            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
+            <Course04/>
+            <Course05/>
+            <Course06/>
+            </div>
+            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
+            <Course07/>
+            <Course08/>
+            </div>  
+            <h3 className="text-2xl font-semibold mb-4">Please Note:</h3>
           <ul className="list-disc list-inside mb-6">
             <li>Tuition fees do not include travel, textbooks, or chamber operator logbook.</li>
             <li>Hybrid and online courses are designed for flexibility and accessibility.</li>
             <li>Upon successful completion, Shanfe provides job placement support through industry connections and referrals.</li>
           </ul>
-
-          <p className="mb-4">
-            Ready to start your journey into hyperbaric operations? Contact us today to:
-          </p>
-          <ul className="list-disc list-inside mb-8">
-            <li>Request a detailed syllabus</li>
-            <li>Register for a course</li>
-            <li>Speak with an advisor</li>
-          </ul>
-
+          </div>
           <div className="text-center">
             <p className="text-2xl p-5 mb-4 font-bold">
               To register or request a detailed syllabus:
@@ -194,10 +149,25 @@ export default function Courses() {
               Phone: <a href="tel:+16048027069" className="text-blue-600 underline hover:text-blue-800">+1-604-802-7069</a>
             </p>
           </div>
-        </div>
+          <div className="text-Chocolate flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-20 mb-10 relative mobile:flex-col">
+                <Image
+                  className="rounded-3xl"
+                  src="/images/photo21.png"
+                  width={350}
+                  height={350}
+                  alt=""
+                />
+                <div className="gap-5 flex flex-col">
+                  <h1 className="text-5xl font-bold">High Altitude Courses</h1>
+                    <div className="flex flex-col gap-5">
+                      <p className="text-lg">
+                      On Demand
+                      </p>
+                      <Button backgroundColor="Sky">Syllabus Coming Soon</Button>
+                    </div>
+                </div>
+              </div>
 
-        <div className="pb-20">
-          <Link href="/"><Button backgroundColor="Eggshell">Back</Button></Link>
         </div>
 
         <ScrollToTopButton />

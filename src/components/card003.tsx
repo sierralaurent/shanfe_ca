@@ -37,11 +37,10 @@ export default function Card003() {
         
           <div className="flex flex-col gap-4">
             <p className='text-lg'>
-                    Shanfe provides comprehensive training in hyperbaric safety and operation such as training and education for: 
+                    Shanfe provides comprehensive training in hyperbaric, hypobaric and high altitdue safety and operations 
                     </p>
                     <div className='flex flex-col gap-6'>
-                        <Link href="/courses"><Button backgroundColor="Sky">Hyperbaric Courses</Button></Link>
-                        <Button backgroundColor="Sky">High Altitude Courses *Coming Soon*</Button>
+                        <Link href="/courses"><Button backgroundColor="Sky">See Courses</Button></Link>
                         </div>
 
           </div>
