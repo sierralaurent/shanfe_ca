@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Course03() {
     
     return (
-        <div className="text-Chocolate flex flex-col justify-between gap bg-Sky items-center w-80 p-6 gap-10 rounded-3xl">
+        <div className="text-Chocolate flex flex-col justify-between gap bg-Sky items-center w-80 p-6  gap-10 rounded-3xl">
             <Image
                 className="rounded-3xl"
                 src='/images/photo20.png'

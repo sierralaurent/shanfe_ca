@@ -15,7 +15,7 @@ export default function Course05() {
                 alt=''
             />
 
-                <div className='flex flex-col items-center gap-5'>
+                <div className='flex flex-col items-center gap-5 mobile:pt-10 mobile:pb-5'>
                     <h1 className='text-2xl font-bold'>HCO – Tunnel Operations Support</h1>
                     <h2 className='text-lg font-bold'>On Demand</h2>
                     <h2 className='text-lg'>Online</h2>
