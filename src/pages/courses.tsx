@@ -13,7 +13,9 @@ import Course07 from "@/components/course07";
 import Course08 from "@/components/course08";
 import ScrollToTopButton from "@/components/scrollToTop";
 import Link from 'next/link';
+import { useEffect } from "react";
 import Script from "next/script";
+
 
 type Course = {
   title: string;
@@ -68,6 +70,14 @@ const courses: Course[] = [
 ];
 
 export default function Courses() {
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <Head>
@@ -94,49 +104,71 @@ export default function Courses() {
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
-
+      <div className='flex flex-col items-center'>
+            <Image
+              className='w-full relative tablet:hidden'
+              src='/images/courses_hero.png'
+              width={2000}
+              height={2000}
+              alt=''
+              />
+              <Image
+              className='desktop:hidden w-full relative'
+              src='/images/courses_hero_mobile.png'
+              width={2000}
+              height={2000}
+              alt=''
+              />
+              </div>
       <main className="flex flex-col items-center p-24 pb-20 pt-20 mobile:p-8 bg-white w-full">
         <div className="w-full max-w-5xl">
 
-          <h1 className="text-6xl font-bold mb-16 text-center">Hyperbaric Operations Training</h1>
-          <p className="mb-6 text-lg ">
-            Welcome to Shanfe Research and Consulting Ltd.'s professional training programs for individuals
-            seeking careers in hyperbaric operations. Our comprehensive courses prepare participants for
+          <h1 className="text-3xl font-bold mb-4 text-center">Welcome to Shanfe Research and Consulting Ltd.'s professional training programs for individuals
+          seeking careers in hyperbaric operations.</h1>
+          <div className="flex items-center flex-col p-10">
+            <Button backgroundColor="Eggshell" onClick={scrollToBottom}>
+              See High Altitude Courses
+            </Button>
+          </div>
+          <p className="mb-4 text-xl ">
+             Our comprehensive courses prepare participants for
             a wide range of roles including:
           </p>
-          <ul className="list-disc text-lg  list-inside mb-6">
+          <ul className="list-disc text-xl  list-inside mb-10">
             <li>Clinical hyperbaric medicine</li>
             <li>Diving operations</li>
-            <li>Tunneling and construction support</li>
-            <li>Emergency evacuation</li>
+            <li>Tunneling support</li>
+            <li>Emergency chamber evacuation</li>
           </ul>
           <p className="mb-6 text-xl ">
             All certification pathways begin with the <strong>Chamber Core Competency</strong> course. From there,
             students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
-          <div className="flex flex-col items-center mb-5"> 
-          <h2 className="text-4xl font-semibold mt-10 mb-4">2025 Course Offerings</h2>
-            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
+          <div className="flex flex-col items-center"> 
+          <h2 className="text-6xl font-semibold mt-14 mb-4">2025 Course Offerings</h2>
+            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 mb-14">
             <Course01/>
-            <Course02/>
-            <Course03/>
-            </div>
-            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
             <Course04/>
-            <Course05/>
-            <Course06/>
+            <Course02/>
             </div>
             <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
-            <Course07/>
+            <Course03/>
+            <Course05/>
             <Course08/>
+            </div>
+            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
+            <Course06/>
+            <Course07/>
             </div>  
-            <h3 className="text-2xl font-semibold mb-4">Please Note:</h3>
+            <div className="flex flex-col items-center pt-10 pb-10">
+            <h3 className="text-3xl font-bold mb-4">Please Note:</h3>
           <ul className="list-disc list-inside mb-6">
             <li>Tuition fees do not include travel, textbooks, or chamber operator logbook.</li>
             <li>Hybrid and online courses are designed for flexibility and accessibility.</li>
             <li>Upon successful completion, Shanfe provides job placement support through industry connections and referrals.</li>
           </ul>
+          </div>
           </div>
           <div className="text-center">
             <p className="text-2xl p-5 mb-4 font-bold">

@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Course01() {
     
     return (
-        <div className="text-Chocolate flex flex-col gap bg-Eggshell items-center w-80 p-10 gap-10 rounded-3xl">
+        <div className="text-Chocolate flex justify-between flex-col gap bg-Eggshell items-center w-80 p-6 gap-10 rounded-3xl">
             <Image
                 className="rounded-3xl"
                 src='/images/photo22.png'
@@ -19,7 +19,9 @@ export default function Course01() {
                     <h1 className='text-2xl font-bold'>Chamber Core Competency</h1>
                     <h2 className='text-lg font-bold'>May 11-17</h2>
                     <h2 className='text-lg'>In Person</h2>
-                    <Link href="/chamber-core-competency"><Button backgroundColor="Sky">See Syllabus</Button></Link>
+                </div>
+                <div>
+                <Link href="/chamber-core-competency"><Button backgroundColor="Sky">See Syllabus</Button></Link>
                 </div>
         </div>
     );
