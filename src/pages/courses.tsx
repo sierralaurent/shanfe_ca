@@ -12,6 +12,8 @@ import Course06 from "@/components/course06";
 import Course07 from "@/components/course07";
 import Course08 from "@/components/course08";
 import ScrollToTopButton from "@/components/scrollToTop";
+import CourseCalendar from "@/components/courseCalendar";
+import RegisterForm from "@/components/registerForm";
 import Link from 'next/link';
 import { useEffect } from "react";
 import Script from "next/script";
@@ -145,8 +147,11 @@ export default function Courses() {
             students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
+          <div className="flex items-center flex-col pb-10">
+            <h1 className="mb-6 mt-6 text-6xl ">2025 Course Calendar</h1>
+            <CourseCalendar/>
+          </div>
           <div className="flex flex-col items-center"> 
-          <h2 className="text-6xl font-semibold mt-14 mb-4">2025 Course Offerings</h2>
             <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 mb-14">
             <Course01/>
             <Course04/>
@@ -171,8 +176,9 @@ export default function Courses() {
           </div>
           </div>
           <div className="text-center">
+            <RegisterForm/>
             <p className="text-2xl p-5 mb-4 font-bold">
-              To register or request a detailed syllabus:
+              To request a detailed syllabus:
             </p>
             <p className="text-lg mb-2">
               Email: <a href="mailto:mechal@shanfe.ca" className="text-blue-600 underline hover:text-blue-800">mechal@shanfe.ca</a>
