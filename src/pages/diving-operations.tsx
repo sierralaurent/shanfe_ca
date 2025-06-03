@@ -6,6 +6,7 @@ import ScrollToTopButton from '@/components/scrollToTop';
 import Link from 'next/link';
 import Script from "next/script";
 import Image from "next/image";
+import RegisterForm from '@/components/registerForm';
 
 export default function DivingOperationsPage() {
   return (
@@ -91,8 +92,9 @@ export default function DivingOperationsPage() {
 
           {/* Contact Info */}
           <div className="text-center">
+            <RegisterForm/>
             <p className="text-2xl p-5 mb-4 font-bold">
-              To register or request a detailed syllabus:
+              To request a detailed syllabus:
             </p>
             <p className="text-lg mb-2">
               Email: <a href="mailto:mechal@shanfe.ca" className="text-blue-600 underline hover:text-blue-800">mechal@shanfe.ca</a>
