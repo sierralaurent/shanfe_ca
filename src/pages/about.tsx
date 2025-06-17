@@ -5,6 +5,8 @@ import Footer from "@/components/footer";
 import Button from "@/components/button";
 import ScrollToTopButton from "@/components/scrollToTop";
 import Script from "next/script";
+import Card01 from "@/components/card01";
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -70,19 +72,7 @@ export default function About() {
               />
               <p className='text-3xl font-bold'>Sherri is driven by a mission to enhance safety and understanding in high-pressure environments, striving to improve the health and well-being of individuals working in challenging conditions.</p>
           </div>
-          <div className='flex flex-col w-full gap-10 bg-Eggshell rounded-3xl p-10 '>
-            <h1 className='text-4xl font-bold'>Teaching and Speaking Engagements</h1>
-              <div className='flex flex-row items-center gap-10 mobile:flex-col'>
-                <Image
-                    className='rounded-3xl'
-                    src='/images/photo07.png'
-                    width={200}
-                    height={100}
-                    alt=''
-                    />
-                <p className='text-lg'>Sherri is an experienced educator, having taught courses at Simon Fraser University, the University of British Columbia, and other institutions. She has delivered guest lectures at prestigious conferences and institutions worldwide, sharing her expertise on topics ranging from occupational diving to environmental medicine.</p>
-                </div>
-          </div>
+          <Card01/>
           <div className='flex flex-col w-full gap-10 rounded-3xl p-10 '>
             <h1 className='text-4xl font-bold'>Education</h1>
               <div className='flex flex-row items-center gap-10 mobile:flex-col'>
@@ -93,7 +83,12 @@ export default function About() {
                     height={100}
                     alt=''
                     />
-                <p className='text-lg'>Sherri holds a Master of Science in Biomedical Physiology and has served as the President of Shanfe Research & Consulting Ltd. since 2022, where she leads initiatives in research and risk management. Prior to this, she held roles as Director of the Environmental Medicine & Physiology Unit at Simon Fraser University and Diving Safety Officer at both the University of British Columbia and the University of Victoria.</p>
+                <p className='text-lg'>Sherri holds a Master of Science in Biomedical Physiology. She is currently the
+                    President of Shanfe Research and Consulting Ltd. a company she started in 2022. She
+                    was the Director of the Environmental Medicine and Physiology Unit at Simon Fraser
+                    University where over saw hyperbaric and hypobaric operations for 18 years. Previous
+                    positions include Diving Safety Officer for the University of British Columbia and the
+                    University of Victoria.</p>
                 </div>
           </div>
           <div className='flex flex-col w-full gap-10 bg-Sky rounded-3xl p-10 '>
@@ -106,7 +101,14 @@ export default function About() {
                     height={100}
                     alt=''
                     />
+                    <div className="flex flex-col gap-5 mobile:items-center">
                 <p className='text-lg'>Sherri's research has been published in esteemed journals and presented at conferences globally. Her work focuses on the effects of hypoxia and hyperbaric conditions on cognitive function and cardio-respiratory responses, contributing to advancements in hyperbaric medicine and occupational health. She is a current research scholar with the Divers Alert Network for their fatality and injury monitoring program and author of the annual report on technical diving fatalities.</p>
+                     <Link href="https://dan.org/" legacyBehavior passHref>
+                      <a target="_blank" rel="noopener noreferrer">
+                        <Button backgroundColor="Eggshell">See Divers Alert Network (DAN)</Button>
+                      </a>
+                    </Link>
+                    </div>                
                 </div>
           </div>
           <div className='flex flex-col w-full gap-10 rounded-3xl p-10 '>
@@ -136,7 +138,11 @@ export default function About() {
                 </div>
           </div>
           <div className='flex items-center w-full flex-col'>
-          <Button backgroundColor="Sky">Download C.V. Document</Button>
+          <Link href="/Sherri Ferguson cv 2025.01.pdf" legacyBehavior passHref>
+            <a target="_blank" rel="noopener noreferrer" download>
+              <Button backgroundColor="Sky">Download C.V. Document</Button>
+            </a>
+          </Link>
           </div>
         </div>
         <ScrollToTopButton />

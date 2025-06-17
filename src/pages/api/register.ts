@@ -8,20 +8,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const { fullName, phone, email, homeAddress, mailingAddress, courses } = req.body;
 
-  // 1. Configure transport (example uses Gmail SMTP)
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER, // your Gmail address
-      pass: process.env.EMAIL_PASS, // app password (not your regular Gmail password)
+      user: process.env.EMAIL_USER, // Gmail address
+      pass: process.env.EMAIL_PASS, // app password 
     },
   });
 
-  // 2. Construct email content
+
   const mailOptions = {
-    from: `"CCC Registration" <${process.env.EMAIL_USER}>`,
-    to: "sierra@shanfe.ca",
-    subject: "New CCC Registration Form Submitted",
+    from: `"Shanfe.ca" <${process.env.EMAIL_USER}>`,
+    to: "mechal@shanfe.ca",
+    subject: "New Shanfe Course Registration Form Submitted",
     html: `
       <h2>New Registration Submission</h2>
       <p><strong>Full Name:</strong> ${fullName}</p>

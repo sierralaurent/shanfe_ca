@@ -13,6 +13,8 @@ const RegisterForm = () => {
     courses: [] as string[],
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
   const courses = [
     "Chamber Core Competency",
     "Chamber Operator Refresher",
@@ -46,11 +48,12 @@ const RegisterForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-  
+
       const data = await res.json();
-  
+
       if (res.ok) {
-        alert("Form submitted!");
+        setSubmitted(true);
+        alert("Form submitted! We will contact you for the next steps.");
       } else {
         console.error("Form submission failed:", data);
         alert("Failed to submit form: " + data.message);
@@ -128,7 +131,9 @@ const RegisterForm = () => {
         </div>
       </fieldset>
 
-      <Button backgroundColor="Eggshell">Submit Registration</Button>
+      <Button backgroundColor="Eggshell" disabled={submitted}>
+        {submitted ? "Submitted" : "Submit Registration"}
+      </Button>
     </form>
   );
 };
