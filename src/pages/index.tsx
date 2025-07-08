@@ -15,6 +15,7 @@ import Card004 from "@/components/card004";
 import Card005 from "@/components/card005";
 import ScrollToTopButton from "@/components/scrollToTop";
 import Script from "next/script";
+import Divercert from "@/components/divercert";
 
 
 export default function Home() {
@@ -93,6 +94,7 @@ export default function Home() {
         <Card005 />
         </div>
       <h1 className='text-5xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
+      
       <div className='flex flex-col w-full items-center'>
         <Image
               className=' '

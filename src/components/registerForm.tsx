@@ -65,7 +65,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-xl flex flex-col items-center mx-auto p-4 space-y-6">
+    <form onSubmit={handleSubmit} className="max-w-xl flex flex-col items-center mx-auto p-6 space-y-6 border border-gray-300 shadow-md rounded-lg bg-white">
       <h2 className="text-2xl font-bold">Registration Form</h2>
 
       <input
@@ -134,6 +134,17 @@ const RegisterForm = () => {
       <Button backgroundColor="Eggshell" disabled={submitted}>
         {submitted ? "Submitted" : "Submit Registration"}
       </Button>
+      <div className="flex flex-col items-center gap-2 p-6">
+      <p className="text-2xl font-bold">
+              To request a detailed syllabus:
+            </p>
+            <p className="text-lg">
+              Email: <a href="mailto:mechal@shanfe.ca" className="text-blue-600 underline hover:text-blue-800">mechal@shanfe.ca</a>
+            </p>
+            <p className="text-lg">
+              Phone: <a href="tel:+16048027069" className="text-blue-600 underline hover:text-blue-800">+1-604-802-7069</a>
+            </p>
+        </div>
     </form>
   );
 };

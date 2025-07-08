@@ -17,6 +17,7 @@ import RegisterForm from "@/components/registerForm";
 import Link from 'next/link';
 import { useEffect } from "react";
 import Script from "next/script";
+import Divercert from "@/components/divercert";
 
 
 type Course = {
@@ -128,9 +129,10 @@ export default function Courses() {
           <h1 className="text-3xl font-bold mb-4 text-center">Welcome to Shanfe Research and Consulting Ltd.'s professional training programs for individuals
           seeking careers in hyperbaric operations.</h1>
           <div className="flex items-center flex-col p-10">
-            <Button backgroundColor="Eggshell" onClick={scrollToBottom}>
-              See High Altitude Courses
-            </Button>
+            <div className="m-4 mb-10">
+              <Divercert/>
+            </div>
+            
           </div>
           <p className="mb-4 text-xl ">
              Our comprehensive courses prepare participants for
@@ -147,22 +149,27 @@ export default function Courses() {
             students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
+          <div className="flex items-center flex-col m-20">
+            <Button backgroundColor="Eggshell" onClick={scrollToBottom}>
+              See High Altitude Courses
+            </Button>
+          </div>
           <div className="flex items-center flex-col pb-10">
             <h1 className="mb-6 mt-6 text-6xl ">2025 Course Calendar</h1>
             <CourseCalendar/>
           </div>
           <div className="flex flex-col items-center"> 
-            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 mb-14">
+            <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
             <Course01/>
             <Course04/>
             <Course02/>
             </div>
-            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
+            <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
             <Course03/>
             <Course05/>
             <Course08/>
             </div>
-            <div className="flex flex-row mobile:flex-col w-full justify-center gap-20 pt-10 pb-10">
+            <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10">
             <Course06/>
             <Course07/>
             </div>  
@@ -177,15 +184,6 @@ export default function Courses() {
           </div>
           <div className="text-center">
             <RegisterForm/>
-            <p className="text-2xl p-5 mb-4 font-bold">
-              To request a detailed syllabus:
-            </p>
-            <p className="text-lg mb-2">
-              Email: <a href="mailto:mechal@shanfe.ca" className="text-blue-600 underline hover:text-blue-800">mechal@shanfe.ca</a>
-            </p>
-            <p className="text-lg mb-6">
-              Phone: <a href="tel:+16048027069" className="text-blue-600 underline hover:text-blue-800">+1-604-802-7069</a>
-            </p>
           </div>
           <div className="text-Chocolate flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-20 mb-10 relative mobile:flex-col">
                 <Image

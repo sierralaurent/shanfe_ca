@@ -94,15 +94,7 @@ export default function TunnelOperationsPage() {
           {/* Contact Info */}
           <div className="text-center">
             <RegisterForm/>
-            <p className="text-2xl p-5 mb-4 font-bold">
-              To request a detailed syllabus:
-            </p>
-            <p className="text-lg mb-2">
-              Email: <a href="mailto:mechal@shanfe.ca" className="text-blue-600 underline hover:text-blue-800">mechal@shanfe.ca</a>
-            </p>
-            <p className="text-lg mb-6">
-              Phone: <a href="tel:+16048027069" className="text-blue-600 underline hover:text-blue-800">+1-604-802-7069</a>
-            </p>
+          
           </div>
         </div>
 
