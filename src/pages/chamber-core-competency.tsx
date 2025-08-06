@@ -64,13 +64,11 @@ export default function ChamberCoreCompetencyPage() {
           <p className="mb-4">7 days in person</p>
           </div>
           
-          <div className="content-center">
-          <h2 className="text-2xl font-semibold">Location</h2>
-          <p className="mb-4">SeaForce Hyperbaric, St. John’s, Newfoundland, Canada</p>
-          </div>
+          
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">May 11–17, 2025</p>
+          <p className="mt-4">October 26th to November 1st, 2025 - St John's, NL, CA.</p>
+          <p className="mb-4">November 16th to 22nd, 2025 - Tobermory, ON, CA.</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

@@ -12,18 +12,17 @@ const courses = [
   { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-10-21", end: "2025-10-25", type: "Live Stream" },
   { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-11-11", end: "2025-11-15", type: "Live Stream" },
   { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-12-09", end: "2025-12-13", type: "Live Stream" },
-  { title: "Chamber Core Competencies", start: "2025-08-22", end: "2025-08-23", type: "Thunder Bay, Ontario, CA" },
-  { title: "Hyperbaric Safety Specialist", start: "2025-08-23", end: "2025-08-25", type: "Thunder Bay, Ontario, CA" },
-  { title: "Emergency Action Plan", start: "2025-08-26", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
+  { title: "CCR - Chamber Operator Refresher", start: "2025-10-31", end: "2025-11-01", type: "St. John's, NL, CA" },
+  { title: "CCR - Chamber Operator Refresher", start: "2025-11-21", end: "2025-11-22", type: "Tobermory, ON, CA" },
+  { title: "Hyperbaric Safety Specialist", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
   { title: "Chamber Core Competencies", start: "2025-10-27", end: "2025-11-02", type: "St. John’s, NL, CA" },
-  { title: "Chamber Core Competencies", start: "2025-11-17", end: "2025-11-23", type: "St. John’s, NL, CA" },
+  { title: "Chamber Core Competencies", start: "2025-11-17", end: "2025-11-23", type: "Tobermory, ON, CA" },
 ];
 
 // Map course titles to URLs
 const courseLinks: Record<string, string> = {
   "HCO - Clinical Hyperbaric Medicine": "/hyperbaric-medicine",
   "Chamber Core Competencies": "/chamber-core-competency",
-  // "Hyperbaric Safety Specialist": "/hyperbaric-safety-specialist", // Link not active
   "Emergency Action Plan": "/emergency-action-plan",
 };
 
@@ -34,7 +33,7 @@ function getMonthName(monthIndex: number) {
 function getCalendarStart(date: Date): Date {
   const first = new Date(date.getFullYear(), date.getMonth(), 1);
   const start = new Date(first);
-  start.setDate(first.getDate() - first.getDay()); // back to Sunday
+  start.setDate(first.getDate() - first.getDay());
   return start;
 }
 
@@ -90,22 +89,24 @@ export default function CourseCalendar() {
           {week.map((day, idx) => {
             const isCurrentMonth = day.getMonth() === month;
             return (
-              <div key={idx} className={`flex-1 border-r p-1 text-sm ${!isCurrentMonth ? "bg-gray-100 text-gray-400" : ""}`}>
+              <div
+                key={idx}
+                className={`flex-1 border-r p-1 text-sm ${!isCurrentMonth ? "bg-gray-100 text-gray-400" : ""}`}
+              >
                 {day.getDate()}
               </div>
             );
           })}
 
-          {/* Render overlapping courses */}
-          {courses
-            .filter(course => {
+          {/* Render overlapping courses directly stacked (same top, z-index by duration) */}
+          {(() => {
+            const weekCourses = courses.filter(course => {
               const start = new Date(course.start);
               const end = new Date(course.end);
-              const weekStart = week[0];
-              const weekEnd = week[6];
-              return end >= weekStart && start <= weekEnd;
-            })
-            .map((course, i) => {
+              return end >= week[0] && start <= week[6];
+            });
+
+            return weekCourses.map((course, i) => {
               const start = new Date(course.start);
               const end = new Date(course.end);
               const weekStart = week[0];
@@ -117,13 +118,18 @@ export default function CourseCalendar() {
               const leftPercent = (firstDayInWeek / 7) * 100;
               const widthPercent = (span / 7) * 100;
 
-              const href = courseLinks[course.title];
+              // Shorter course = higher zIndex
+              const duration = (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24);
+              const zIndex = 100 - duration; // Short = on top
+
               const commonStyle = {
                 left: `${leftPercent}%`,
                 width: `${widthPercent}%`,
-                zIndex: 10,
+                top: `1.25rem`, // Same top for all
+                zIndex,
               };
 
+              const href = courseLinks[course.title];
               const content = (
                 <div className="truncate">
                   {course.title}
@@ -132,26 +138,27 @@ export default function CourseCalendar() {
               );
 
               return href ? (
-                <Link
-                  key={course.title + i}
-                  href={href}
-                  className="absolute top-6 bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow hover:bg-blue-300 transition-colors"
-                  style={commonStyle}
-                  title={`${course.title} (${course.type})`}
-                >
-                  {content}
-                </Link>
-              ) : (
-                <div
-                  key={course.title + i}
-                  className="absolute top-6 bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow truncate"
-                  style={commonStyle}
-                  title={`${course.title} (${course.type})`}
-                >
-                  {content}
-                </div>
+                 <Link
+                      key={course.title + i}
+                      href={href}
+                      className="absolute bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow border border-blue-300 hover:bg-blue-300 transition-colors"
+                      style={commonStyle}
+                      title={`${course.title} (${course.type})`}
+                    >
+                      {content}
+                    </Link>
+                  ) : (
+                    <div
+                      key={course.title + i}
+                      className="absolute bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow border border-blue-300 truncate"
+                      style={commonStyle}
+                      title={`${course.title} (${course.type})`}
+                    >
+                      {content}
+                    </div>
               );
-            })}
+            });
+          })()}
         </div>
       ))}
     </div>

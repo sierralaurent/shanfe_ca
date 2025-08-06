@@ -17,7 +17,10 @@ export default function Course04() {
 
                 <div className='flex flex-col items-center gap-2'>
                     <h1 className='text-2xl font-bold'>Chamber Operator Refresher</h1>
-                    <h2 className='text-lg font-bold'>May 16-17</h2>
+                    <div className='flex flex-col items-center'>
+                    <h2 className='text-lg font-bold'>October 30-31</h2>
+                    <h2 className='text-lg font-bold'>Nov 20-22</h2>
+                    </div>
                     <h2 className='text-lg'>In Person</h2>
                 </div>
                 <div>

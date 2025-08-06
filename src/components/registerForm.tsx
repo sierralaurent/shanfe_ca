@@ -16,8 +16,10 @@ const RegisterForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const courses = [
-    "Chamber Core Competency",
-    "Chamber Operator Refresher",
+    "Chamber Core Competency (Oct 26-Nov 1)",
+    "Chamber Core Competency (Nov 16-22)",
+    "Chamber Operator Refresher (Oct 30-31)",
+    "Chamber Operator Refresher (Nov 20-22)",
     "HCO- Clinical Hyperbaric Medicine",
     "HCO- Diving Operations Support",
     "HCO- Tunnel Operations Support",

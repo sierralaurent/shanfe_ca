@@ -21,7 +21,7 @@ export default function NavBar() {
                     height={150}
                     alt=''
                 /></Link>
-                <div className={'flex flex-row gap-10'}>
+                <div className={'flex flex-row gap-10 mobile:gap-2'}>
                     <Link href="/">
                         <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/') ? 'underline' : ''}`}>Services</h1>
                     </Link>
@@ -30,6 +30,9 @@ export default function NavBar() {
                     </Link>
                     <Link href="/courses">
                         <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/courses') ? 'underline' : ''}`}>Courses</h1>
+                    </Link>
+                    <Link href="/staff">
+                        <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/staff') ? 'underline' : ''}`}>Staff</h1>
                     </Link>
                     
                 </div>
