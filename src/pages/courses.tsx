@@ -84,9 +84,11 @@ export default function Courses() {
   return (
     <>
       <Head>
-        <title>SHANFE | Courses</title>
+        <title>SHANFE | Hyperbaric Training & Courses</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Explore Shanfe’s hyperbaric and hypobaric course offerings: Clinical Hyperbaric Medicine, Chamber Core Competency, Diving & Tunnel Operations Support, Hyperbaric Safety Specialist, and emergency evacuation training—all following CSA Z275.4 standards and DCBC certification pathways." />
+        <meta name="keywords" content="hyperbaric training and courses, hyperbaric courses Canada, hypobaric training, chamber operator course, clinical hyperbaric medicine course, hyperbaric safety specialist, diver certification, DAN diver training, CSA Z275.4, DCBC certification, diving medicine, hyperbaric chamber operation, tunnel worker hyperbaric training, commercial diver training" />
       </Head>
       <>
         {/* Google Tag Manager Script */}
@@ -113,14 +115,14 @@ export default function Courses() {
               src='/images/courses_hero.png'
               width={2000}
               height={2000}
-              alt=''
+              alt='Hyperbaric Training & Courses'
               />
               <Image
               className='desktop:hidden w-full relative'
               src='/images/courses_hero_mobile.png'
               width={2000}
               height={2000}
-              alt=''
+              alt='Hyperbaric Training & Courses'
               />
               </div>
       <main className="flex flex-col items-center p-24 pb-20 pt-20 mobile:p-8 bg-white w-full">

@@ -12,9 +12,11 @@ export default function ChamberCoreCompetencyPage() {
   return (
     <>
       <Head>
-        <title>SHANFE | Chamber Core Competency</title>
+        <title>SHANFE | Hyperbaric Chamber Operator Core Competency Course</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="7-day in-person Chamber Operator Core Competency training in St. John's, NL. Practical instruction in chamber operation, decompression protocols, oxygen toxicity, safety inspections, and maintenance—ideal for certification, recertification, or as pre-requisite for diving or tunnel operations roles." />
+        <meta name="keywords" content="chamber operator training, hyperbaric chamber core competency, commercial diving chamber course, CSA Z275.4 core competency, DCBC diver training, hyperbaric decompression procedures, oxygen toxicity prevention, chamber safety protocols, chamber maintenance training, tunnel operations hyperbaric training, diver medic training" />
       </Head>
       <>
       {/* Google Tag Manager Script */}
@@ -41,13 +43,13 @@ export default function ChamberCoreCompetencyPage() {
         src='/images/COCC2.png'
         width={2000}
         height={2000}
-        alt=''
+        alt='Hyperbaric Chamber Operator Core Competency Course'
         />
         </div>
 
       <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
         <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-3xl font-bold mb-6">Chamber Operator Core Competencies</h1>
+          <h1 className="text-3xl font-bold mb-6">	Hyperbaric Chamber Operator Core Competency Training</h1>
           <p className="mb-4">
             This course can be combined with one of our other online courses to be eligible for certification as a clinical chamber operator, or certification as an operator in support of occupational diving or tunnel operations, or towards certification to operate the SOS system evacuation chamber. 
             <br /><br />

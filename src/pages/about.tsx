@@ -15,6 +15,8 @@ export default function About() {
         <title>SHANFE | About</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Learn about Sherri Ferguson’s 30+ years of experience in aerospace and diving research, hyperbaric medicine, and safety leadership." />
+        <meta name="keywords" content="hyperbaric, hyperbaric medicine, diving research, aerospace safety, hypobaric, SHANFE" />
       </Head>
       <>
   {/* Google Tag Manager Script */}
@@ -40,14 +42,14 @@ export default function About() {
         src='/images/SherriFerguson_Hero.png'
         width={2000}
         height={2000}
-        alt=''
+        alt='Your trusted partner in hyper/hypobaric safety, training, and research'
         />
         <Image
         className='desktop:hidden relative w-full relative'
         src='/images/SherriFerguson_Hero_Phone.png'
         width={2000}
         height={2000}
-        alt=''
+        alt='Your trusted partner in hyper/hypobaric safety, training, and research'
         />
       <main className={`flex flex-col items-center p-24 mobile:p-8 bg-white`}>
         <div className='flex flex-col max-w-7xl w-full gap-16 pb-24'>

@@ -20,7 +20,7 @@ export default function AaronBio() {
         src="/images/aaron-griffin.png"
         width={350}
         height={350}
-        alt="Aaron Griffin"
+        alt="Aaron Griffin - President of Underwater Skills Institute"
       />
 
       <div className="gap-5 flex flex-col max-w-3xl">

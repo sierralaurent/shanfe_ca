@@ -12,9 +12,11 @@ export default function HyperbaricMedicinePage() {
   return (
     <>
       <Head>
-        <title>SHANFE | Clinical Hyperbaric Medicine</title>
+        <title>SHANFE | Clinical Hyperbaric Medicine Online Course</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="5-day live online Clinical Hyperbaric Medicine course approved for 40 CAT-A CME credits by UHMS, meeting CSA Z275.4 certification via the Diver Certification Board of Canada. Covers safety protocols, TCOM, wound care principles, hyperbaric oxygen therapy, and risk management." />
+        <meta name="keywords" content="clinical hyperbaric medicine, hyperbaric oxygen therapy training, HBOT course, hyperbaric CME credits, UHMS approved training, CSA Z275.4, DCBC approved course, TCOM training, wound care hyperbaric medicine, hyperbaric safety, medical hyperbarics, hyperbaric risk assessment, online hyperbaric course" />
       </Head>
       <>
       {/* Google Tag Manager Script */}
@@ -41,7 +43,7 @@ export default function HyperbaricMedicinePage() {
               src='/images/CHM.png'
               width={2000}
               height={2000}
-              alt=''
+              alt='Clinical Hyperbaric Medicine Online Course'
               />
               </div>
       

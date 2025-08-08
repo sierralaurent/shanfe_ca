@@ -12,9 +12,11 @@ export default function DivingOperationsPage() {
   return (
     <>
       <Head>
-        <title>SHANFE | Diving Operations Support</title>
+        <title>SHANFE | Diving Operations Support Training</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Professional diving operations support training covering safety, HBOT, chamber operations, and CSA Z275.4/DCBC certification for divers." />
+        <meta name="keywords" content="diving operations support course, commercial diving safety, diver hyperbaric training, diving medicine support, DAN diver safety training, chamber operations for diving, CSA Z275.4 diver training, DCBC diver course, hyperbaric rescue procedures, diving emergency response, underwater operations safety" />
       </Head>
       <>
       {/* Google Tag Manager Script */}
@@ -41,7 +43,7 @@ export default function DivingOperationsPage() {
               src='/images/ODS.png'
               width={2000}
               height={2000}
-              alt=''
+              alt='Diving Operations Support Training'
               />
               </div>
 

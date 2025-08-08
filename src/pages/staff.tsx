@@ -15,9 +15,11 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>SHANFE | About</title>
+        <title>SHANFE | Meet the Shanfe Team – Hyperbaric & Hypobaric Experts</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Meet the Shanfe team of hyperbaric and hypobaric medicine experts, diving safety specialists, and aerospace medical consultants." />
+        <meta name="keywords" content="Shanfe team, Shanfe staff, hyperbaric medicine experts, hypobaric research specialists, diving medicine professionals, hyperbaric trainers, aerospace medical consultants, hyperbaric chamber instructors, clinical hyperbaric educators, diving safety specialists, hyperbaric training staff" />
       </Head>
 
       {/* Google Tag Manager Script */}
@@ -39,9 +41,9 @@ export default function About() {
       </div>
 
       <main className={`flex flex-col items-center p-24 pt-12 mobile:p-8 bg-white`}>
-        <div className={`flex flex-col pt-5 pb-24 gap-10 mobile:p-8 bg-white max-w-7xl`}>
-            <div className='flex flex-col p-10 gap-4 items-center'>
-            <h1 className="text-6xl font-bold">Meet Our Experts</h1>
+        <div className={`flex flex-col items-center pt-5 pb-24 gap-10 mobile:p-8 bg-white max-w-7xl`}>
+            <div className='flex flex-col p-10 gap-8 items-center'>
+            <h1 className="text-6xl font-bold text-center">Meet the SHANFE Team – Hyperbaric & Hypobaric Experts</h1>
             <h3 className="text-xl pb-10">At SHANFE, our team is made up of experienced professionals dedicated to advancing education in hyperbaric medicine, dive safety, and emergency response. Together, we deliver practical, real-world training backed by the latest in industry best practices.</h3>
             <div className="flex desktop:flex-row items-center justify-between items-start w-full flex-col justify-between tablet:gap-10">
             <Image
@@ -49,21 +51,21 @@ export default function About() {
                     src="/images/photo23.png"
                     width={450}
                     height={350}
-                    alt=""
+                    alt="Hyperbaric & Hypobaric Experts"
                 />
                 <Image
                     className="rounded-3xl tablet:w-full"
                     src="/images/photo25.png"
                     width={250}
                     height={350}
-                    alt=""
+                    alt="Hyperbaric & Hypobaric Experts"
                 />
                 <Image
                     className="rounded-3xl tablet:w-full"
                     src="/images/photo24.png"
                     width={450}
                     height={350}
-                    alt=""
+                    alt="Hyperbaric & Hypobaric Experts"
                 />
             </div>
             </div>

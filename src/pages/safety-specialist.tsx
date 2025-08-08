@@ -12,9 +12,11 @@ export default function SafetySpecialist() {
   return (
     <>
       <Head>
-        <title>SHANFE | Hyperbaric Safety Specialist</title>
+        <title>SHANFE | Hyperbaric Safety Specialist Course</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Hyperbaric Safety Specialist training for chamber operators, clinicians, and technicians. Covers hazard assessment, protocols, and CSA Z275.4 safety." />
+        <meta name="keywords" content="hyperbaric safety specialist, hyperbaric chamber safety training, hyperbaric hazard assessment, HBOT safety course, hyperbaric safety protocols, chamber fire safety, oxygen handling safety, CSA Z275.4 safety training, hyperbaric risk management, hyperbaric compliance training" />
       </Head>
       <>
       {/* Google Tag Manager Script */}
@@ -41,7 +43,7 @@ export default function SafetySpecialist() {
         src='/images/HSS.png'
         width={2000}
         height={2000}
-        alt=''
+        alt='Hyperbaric Safety Specialist Course'
         />
         </div>
 

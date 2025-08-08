@@ -24,6 +24,7 @@ const courseLinks: Record<string, string> = {
   "HCO - Clinical Hyperbaric Medicine": "/hyperbaric-medicine",
   "Chamber Core Competencies": "/chamber-core-competency",
   "Emergency Action Plan": "/emergency-action-plan",
+  "Hyperbaric Safety Specialist": "/safety-specialist"
 };
 
 function getMonthName(monthIndex: number) {

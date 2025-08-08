@@ -20,7 +20,7 @@ export default function Divercert() {
         src="/images/diver-cert.png"
         width={350}
         height={350}
-        alt=""
+        alt="Accredited by the Diver Certification Board of Canada"
       />
 
       <div className="gap-5 flex flex-col">

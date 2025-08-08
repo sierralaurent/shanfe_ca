@@ -20,7 +20,7 @@ export default function FrancoisBio() {
         src="/images/francois-photo.png"
         width={350}
         height={350}
-        alt="Francois Burman"
+        alt="Francois Burman Int(PE), MSc, FSAIW, UHMSDSA"
       />
 
       <div className="gap-5 flex flex-col max-w-3xl">

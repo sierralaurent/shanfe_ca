@@ -22,9 +22,11 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>SHANFE | Services</title>
+        <title>SHANFE | Hyperbaric & Hypobaric Consultancy Services</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Specialized hyperbaric and hypobaric risk assessments, research, audits, and training services for aviation, medical devices, and diving industries." />
+        <meta name="keywords" content="hyperbaric, hyperbaric medicine, diving research, aerospace safety, hypobaric, SHANFE" />
     </Head>
     <>
   {/* Google Tag Manager Script */}
@@ -51,21 +53,21 @@ export default function Home() {
         src='/images/Shanfe_Hero.png'
         width={2000}
         height={2000}
-        alt=''
+        alt='Hyperbaric & Hypobaric Consultancy Services'
         />
         <Image
         className='desktop:hidden w-full relative'
         src='/images/Shanfe_Hero_Phone.png'
         width={2000}
         height={2000}
-        alt=''
+        alt='Hyperbaric & Hypobaric Consultancy Services'
         />
     <main className={`flex flex-col items-center gap-24 p-10 max-w-7xl mobile:p-8`}>
       <Image
       src='/LogoMark300ppi.png'
       width={200}
       height={200}
-      alt=''
+      alt='Hyperbaric & Hypobaric Consultancy Services'
       />
       <div className={'max-w-7xl flex flex-row mobile:flex-col items-center gap-20'}>
         <div className='max-w-2xl'>
@@ -101,7 +103,7 @@ export default function Home() {
               src='/Icons/logo08.png'
               width={500}
               height={500}
-              alt=''
+              alt='Hydrospace Group Incorporated'
               />
         </div>
         <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-5 tablet:items-center'>
@@ -110,14 +112,14 @@ export default function Home() {
               src='/Icons/SVG/logo01.svg'
               width={300}
               height={100}
-              alt=''
+              alt='New Foundland Health Services'
               />
               <Image
               className=' '
               src='/Icons/SVG/logo02.svg'
               width={400}
               height={300}
-              alt=''
+              alt='De Havilland Aircraft of Canada Limited'
               />
               
               <Image
@@ -125,7 +127,7 @@ export default function Home() {
               src='/Icons/logo06.png'
               width={300}
               height={300}
-              alt=''
+              alt='Ripleys Aquariums'
               />
           
         </div>
@@ -135,21 +137,21 @@ export default function Home() {
               src='/Icons/SVG/Logo07.svg'
               width={300}
               height={300}
-              alt=''
+              alt='West End Connectors'
               />
               <Image
               className=' '
               src='/Icons/SVG/logo04.svg'
               width={200}
               height={300}
-              alt=''
+              alt='DAN Divers Alert Network'
               />
               <Image
               className=' '
               src='/Icons/SVG/logo05.svg'
               width={300}
               height={300}
-              alt=''
+              alt='The University of British Columbia UBC'
               />
         </div>
         

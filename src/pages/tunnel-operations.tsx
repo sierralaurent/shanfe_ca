@@ -12,9 +12,11 @@ export default function TunnelOperationsPage() {
   return (
     <>
       <Head>
-        <title>SHANFE | Tunnel Operations Support</title>
+        <title>SHANFE | Tunnel Operations Support Course</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Hyperbaric training for tunnel operations workers. Includes safety, decompression, chamber operation, and CSA Z275.4 certification." />
+        <meta name="keywords" content="tunnel operations hyperbaric training, compressed air tunnel worker training, hyperbaric tunneling safety, tunnel decompression procedures, CSA Z275.4 tunnel course, tunnel worker hyperbaric certification, tunnel operations chamber training, pressurized tunnel safety, hyperbaric tunnel maintenance training" />
       </Head>
       <>
       {/* Google Tag Manager Script */}
@@ -41,7 +43,7 @@ export default function TunnelOperationsPage() {
                     src='/images/TOS.png'
                     width={2000}
                     height={2000}
-                    alt=''
+                    alt='Tunnel Operations Support Course'
                     />
                     </div>
       <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">

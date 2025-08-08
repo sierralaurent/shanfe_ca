@@ -20,7 +20,7 @@ export default function SherriBio() {
         src="/images/sherri-ferguson.png"
         width={350}
         height={350}
-        alt="Sherri Ferguson"
+        alt="Sherri Ferguson - President of Shanfe Research & Consulting"
       />
 
       <div className="gap-5 flex flex-col max-w-3xl">
