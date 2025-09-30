@@ -1,42 +1,76 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { Menu, X } from "lucide-react";
 
 export default function NavBar() {
-    const router = useRouter();
+  const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    // Function to determine if a link is active
-    const isLinkActive = (href: string) => {
-        return router.pathname === href;
-    };
+  const isLinkActive = (href: string) => router.pathname === href;
 
-    return (
-        <>
-            <div className={'w-full flex flex-row justify-between items-center p-5 text-Chocolate'}>
-                <Link href="/">
-                <Image
-                    className='hover:scale-110 transition-transform'
-                    src='/LogoMark300ppi.png'
-                    width={150}
-                    height={150}
-                    alt=''
-                /></Link>
-                <div className={'flex flex-row gap-10 mobile:gap-2'}>
-                    <Link href="/">
-                        <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/') ? 'underline' : ''}`}>Services</h1>
-                    </Link>
-                    <Link href="/about">
-                        <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/about') ? 'underline' : ''}`}>About</h1>
-                    </Link>
-                    <Link href="/courses">
-                        <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/courses') ? 'underline' : ''}`}>Courses</h1>
-                    </Link>
-                    <Link href="/staff">
-                        <h1 className={`text-xl font-bold hover:scale-110 transition-transform ${isLinkActive('/staff') ? 'underline' : ''}`}>Staff</h1>
-                    </Link>
-                    
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <nav className="w-full flex items-center justify-between p-5 text-Chocolate relative">
+      {/* Logo */}
+      <Link href="/">
+        <Image
+          className="hover:scale-110 transition-transform"
+          src="/LogoMark300ppi.png"
+          width={150}
+          height={150}
+          alt="Logo"
+        />
+      </Link>
+
+      {/* Hamburger Button (mobile only) */}
+      <div className="md:hidden relative">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="p-2"
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={38} /> : <Menu size={48} />}
+        </button>
+
+        {/* Dropdown Menu */}
+        {menuOpen && (
+          <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg flex flex-col py-2 z-50">
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className={`px-4 py-2 text-2xl hover:bg-gray-100 ${
+                isLinkActive("/") ? "font-extrabold" : "font-medium"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/aboutUs"
+              onClick={() => setMenuOpen(false)}
+              className={`px-4 py-2 text-2xl hover:bg-gray-100 ${
+                isLinkActive("/aboutUs") ? "font-extrabold" : "font-medium"
+              }`}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/courses"
+              onClick={() => setMenuOpen(false)}
+              className={`px-4 py-2 text-2xl hover:bg-gray-100 ${
+                isLinkActive("/courses") ? "font-extrabold" : "font-medium"
+              }`}
+            >
+              Courses
+            </Link>
+ 
+          </div>
+        )}
+      </div>
+
+     
+    </nav>
+  );
 }

@@ -156,10 +156,6 @@ export default function Courses() {
               See High Altitude Courses
             </Button>
           </div>
-          <div className="flex items-center flex-col pb-10">
-            <h1 className="mb-6 mt-6 text-6xl ">2025 Course Calendar</h1>
-            <CourseCalendar/>
-          </div>
           <div className="flex flex-col items-center"> 
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
             <Course01/>
@@ -184,8 +180,9 @@ export default function Courses() {
           </ul>
           </div>
           </div>
-          <div className="text-center">
-            <RegisterForm/>
+                    <div className="flex items-center flex-col pb-10">
+            <h1 className="mb-6 mt-6 text-6xl ">2025 Course Calendar</h1>
+            <CourseCalendar/>
           </div>
           <div className="text-Chocolate flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-20 mb-10 relative mobile:flex-col">
                 <Image

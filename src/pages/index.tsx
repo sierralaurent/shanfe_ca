@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Specialized hyperbaric and hypobaric risk assessments, research, audits, and training services for aviation, medical devices, and diving industries." />
-        <meta name="keywords" content="hyperbaric, hyperbaric medicine, diving research, aerospace safety, hypobaric, SHANFE" />
+        <meta name="keywords" content="hyperbaric, hyperbaric medicine, hyperbaric training, hyperbaric audits, hyperbaric research, diving research, aerospace safety, hypobaric, SHANFE" />
     </Head>
     <>
   {/* Google Tag Manager Script */}
@@ -63,39 +63,43 @@ export default function Home() {
         alt='Hyperbaric & Hypobaric Consultancy Services'
         />
     <main className={`flex flex-col items-center gap-24 p-10 max-w-7xl mobile:p-8`}>
-      <Image
-      src='/LogoMark300ppi.png'
-      width={200}
-      height={200}
-      alt='Hyperbaric & Hypobaric Consultancy Services'
-      />
-      <div className={'max-w-7xl flex flex-row mobile:flex-col items-center gap-20'}>
-        <div className='max-w-2xl'>
-          <h1 className="text-5xl font-bold">What can we do with over 30 years experience?</h1>
-          </div>
-        <div className="max-w-2xl">
-          <p className='text-lg'>Shanfe is your premier partner for comprehensive experience in hyper/hypobaric environments. Specializing in research, compliance audits, risk assessments, training, and consultancy services, ensuring compliance with national and international standards while prioritizing safety and efficiency. With a commitment to excellence, Shanfe delivers tailored solutions that mitigate risks, optimize operations, and foster a culture of safety within your organization.</p>
+      <div className={'max-w-7xl flex flex-col mobile:flex-col items-center gap-10 pt-10'}>
+        <h1 className="text-4xl font-bold text-center">Safety is at the core of everything SHANFE offers.</h1>
+        <div className='max-w-3xl'>
+          <h1 className="text-3xl font-semibold">We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.</h1>
           </div>
       </div>
-        <div className='w-full flex flex-col items-start'> 
-        <Card001 />
-        </div>
-        <div className='w-full flex flex-col items-end'> 
-        <Card002 />
-        </div>
-        <div className='w-full flex flex-col items-start'> 
-        <Card003 />
-        </div>
-      <h1 className='text-7xl font-bold'>Research</h1>
-      <p className='text-2xl'>Offering study design, ethics submission, study management, participant recruitment, field data collection, data analysis, scientific report writing and peer review submissions.</p>
-
-        <div className='w-full flex flex-col items-end'> 
-        <Card004 />
-        </div>
-        <div className='w-full flex flex-col items-start'> 
-        <Card005 />
-        </div>
-      <h1 className='text-5xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
+      <div className={'flex flex-col gap-4'}> 
+      <div className={'flex flex-row tablet:flex-col gap-10'}>
+        <Image className='rounded-3xl '
+              src='/images/photo02.png'
+              width={400}
+              height={400}
+              alt='Hydrospace Group Incorporated'
+              />
+              <Image className='rounded-3xl '
+              src='/images/photo03.png'
+              width={400}
+              height={400}
+              alt='Hydrospace Group Incorporated'
+              />
+      </div>
+     <div className={'flex flex-row tablet:flex-col gap-10'}>
+        <Image className='rounded-3xl '
+              src='/images/photo04.png'
+              width={400}
+              height={400}
+              alt='Hydrospace Group Incorporated'
+              />
+              <Image className='rounded-3xl '
+              src='/images/photo05.png'
+              width={400}
+              height={400}
+              alt='Hydrospace Group Incorporated'
+              />
+      </div>
+      </div>
+      <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
       
       <div className='flex flex-col w-full items-center'>
         <Image
