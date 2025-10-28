@@ -23,15 +23,14 @@ export default function MechalBio() {
         </div>
 
         <p className="text-base">
-          Mechal brings a strong background in education and administration, a degree in human services, and extensive experience in business management. As Director of Training at Shanfe, she has played a key role in the development of the company’s educational programs, leveraging her expertise in both education and business to create effective, engaging learning experiences.
+          Mechal Lavender possesses a strong background in education and administration, underpinned by a degree in human services, along with extensive experience in business management. In her capacity as Director of Training at Shanfe, she has been instrumental in the design and advancement of the company’s educational programs, expertly integrating her knowledge of both education and business to develop effective and engaging learning experiences.
         </p>
 
         <p className="text-base">
-          She spent four years facilitating at Humber College in Ontario, where she supported students and professionals from diverse backgrounds in developing practical skills and achieving their career goals. This experience has fostered a deep commitment to creating inclusive, supportive learning environments that empower participants to succeed.
-        </p>
-
+          Her continuous experience facilitating for a post-secondary institution in Ontario has enabled her to support a diverse range of students and professionals in cultivating practical skills and achieving their vocational objectives. This tenure has instilled a profound commitment to fostering inclusive and supportive learning environments that empower all participants to succeed.
+          </p>
         <p className="text-base">
-          Throughout her career, Mechal has emphasized collaboration, thoughtful program development, and the continual refinement of educational and business processes. She is dedicated to lifelong learning, viewing ongoing personal and professional growth as the foundation for meaningful achievement.
+          Throughout her career, Mechal has consistently prioritized collaboration, meticulous program development, and the ongoing enhancement of educational and business processes. She is firmly dedicated to lifelong learning, regarding continuous personal and professional development as essential to meaningful accomplishment.
         </p>
       </div>
     </div>

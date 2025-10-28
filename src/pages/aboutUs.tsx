@@ -112,7 +112,7 @@ export default function About() {
             </div>
 
             {/* Staff Cards */}
-            <div className="flex flex-row flex-wrap gap-5 justify-start w-full">
+            <div className="flex flex-row flex-wrap mobile:flex-col mobile:items-center gap-5 justify-start w-full">
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                 <StaffCard
                   name="Sherri Ferguson"
@@ -153,7 +153,7 @@ export default function About() {
             </div>
 
             {/* Staff Cards */}
-            <div className="flex flex-row flex-wrap gap-5 mobile:p-0 justify-start w-full">
+            <div className="flex flex-row flex-wrap gap-5 mobile:flex-col mobile:items-center w-full">
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                 <StaffCard
                   name="François"

@@ -63,30 +63,41 @@ export default function ChamberCoreCompetencyPage() {
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Duration</h2>
-          <p className="mb-4">7 days in person</p>
+          <p className="mb-4">3 days in person</p>
           </div>
           
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mt-4">October 26th to November 1st, 2025 - St John's, NL, CA.</p>
-          <p className="mb-4">November 16th to 22nd, 2025 - Tobermory, ON, CA.</p>
+          <p className="mt-4">February 10th to 12th, 2026 - Calgary, AB, CA.</p>
+          <p className="mb-4">March 1st to 3rd, 2026 - Tobermory, ON, CA.</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>
-          <p className="mb-4">$3,000.00</p>
+          <p className="mb-4">$1,500.00</p>
           </div>
           </div>
           <h2 className="text-2xl font-semibold mt-4 mb-2">Topics Covered</h2>
           <ul className="list-disc list-inside mb-6">
-            <li>Hands-on operation of a hyperbaric chamber including start-up and shut-down procedures</li>
-            <li>Operation of treatment tables, diving tables, and SUR-D-O₂ tables</li>
-            <li>Chamber ventilation and maintenance requirements</li>
-            <li>Auxiliary equipment operation and chamber cleaning</li>
-            <li>Safety considerations and inspection of acrylics</li>
-            <li>National and international standards</li>
-            <li>Oxygen toxicity management and air brakes</li>
-            <li>Monitoring for oxygen and carbon dioxide inside chambers</li>
+            <li>Chamber grounding</li>
+            <li>Predive checks of the patient</li>
+            <li>Chamber travel rates</li>
+            <li>Time keeping tables, air brakes, travel rate</li>
+            <li>Log books for patient, chamber, operator</li>
+            <li>Air brakes</li>
+            <li>Decompression considerations</li>
+            <li>History of hyperbaric</li>
+            <li>Gas physics</li>
+            <li>Hyperbaric physiologic considerations</li>
+            <li>DCS</li>
+            <li>AGE</li>
+            <li>Approved indications/contraindication</li>
+            <li>Medical anatomical terminology</li>
+            <li>Oxygen toxicity</li>
+            <li>Barotrauma</li>
+            <li>Record keeping HIPPA compliance</li>
+            <li>Canadian standards and provincial regulations</li>
+            <li>HBOT research considerations and processes</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mb-4">Course Objectives</h2>

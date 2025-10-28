@@ -15,8 +15,8 @@ const courses = [
   { title: "CCR - Chamber Operator Refresher", start: "2025-10-31", end: "2025-11-01", type: "St. John's, NL, CA" },
   { title: "CCR - Chamber Operator Refresher", start: "2025-11-21", end: "2025-11-22", type: "Tobermory, ON, CA" },
   { title: "Hyperbaric Safety Specialist", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
-  { title: "Chamber Core Competencies", start: "2025-10-27", end: "2025-11-02", type: "St. John’s, NL, CA" },
-  { title: "Chamber Core Competencies", start: "2025-11-17", end: "2025-11-23", type: "Tobermory, ON, CA" },
+  { title: "Chamber Core Competencies", start: "2026-02-11", end: "2026-02-13", type: "Calgary, AB, CA" },
+  { title: "Chamber Core Competencies", start: "2026-03-01", end: "2026-03-04", type: "Tobermory, ON, CA" },
 ];
 
 // Map course titles to URLs
