@@ -15,13 +15,13 @@ export default function Course02() {
                 alt=''
             />
 
-                <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-2xl font-bold'>HCO - Clinical Hyperbaric Medicine</h1>
-                    <h2 className='text-lg font-bold'>Monthly</h2>
-                    <h2 className='text-lg'>Online</h2>
+                <div className='flex flex-col justifyitems-center gap-2'>
+                    <h1 className='text-2xl font-bold'>#130 Monoplace Chamber Operator</h1>
+                    <h2 className='text-lg font-bold'>February 8-9</h2>
+                    <h2 className='text-lg'>In Person</h2>
                 </div>
                 <div>
-                <Link href="/hyperbaric-medicine"><Button backgroundColor="Sky">See Syllabus</Button></Link>
+                <Link href="/hyperbaricmedicine"><Button backgroundColor="Sky">See Syllabus</Button></Link>
                 </div>
         </div>
     );

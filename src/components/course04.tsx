@@ -16,7 +16,7 @@ export default function Course04() {
             />
 
                 <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-2xl font-bold'>Chamber Operator Refresher</h1>
+                    <h1 className='text-2xl font-bold'>#120 Multiplace Chamber Operator</h1>
                     <div className='flex flex-col items-center'>
                     <h2 className='text-lg font-bold'>October 30-31</h2>
                     <h2 className='text-lg font-bold'>Nov 20-22</h2>
@@ -24,7 +24,7 @@ export default function Course04() {
                     <h2 className='text-lg'>In Person</h2>
                 </div>
                 <div>
-                <Button backgroundColor="Eggshell">See Syllabus</Button>
+                <Link href="/multiplaceoperations"><Button backgroundColor="Eggshell">See Syllabus</Button></Link>
                 </div>
         </div>
     );

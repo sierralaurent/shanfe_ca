@@ -16,16 +16,18 @@ const RegisterForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const courses = [
-    "Chamber Core Competency (Feb 10-12,)",
-    "Chamber Core Competency (March 1-3)",
-    "Chamber Operator Refresher (Oct 30-31)",
-    "Chamber Operator Refresher (Nov 20-22)",
-    "HCO- Clinical Hyperbaric Medicine",
-    "HCO- Diving Operations Support",
-    "HCO- Tunnel Operations Support",
-    "HCO- SOS Hyperlite Evacuation Chamber",
-    "Hyperbaric Safety Specialist",
-    "Acrylics Technician",
+    "#110 Hyperbaric Core Competencies (Feb 10-12,)",
+    "#110 Hyperbaric Core Competencies (March 1-3)",
+    "#120 Multiplace Chamber Operator (Oct 30-31)",
+    "#120 Multiplace Chamber Operator (Nov 20-22)",
+    "#130 Monoplace Chamber Operato",
+    "#140 Tunnelling Chamber Operations",
+    "#150 Diving Chamber Operations",
+    "#160 SOS Hyperlite Chamber Operations",
+    "#170 Compressed Air Worker",
+    "#180 Hyperbaric Safety",
+    "#190 Inspection and Maintenance of Acrylics"
+
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

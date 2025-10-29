@@ -16,12 +16,12 @@ export default function Course08() {
             />
 
                 <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-xl font-bold'>HCO - SOS Hyperlite Evacuation Chamber</h1>
-                    <h2 className='text-lg font-bold'>Date TBD</h2>
-                    <h2 className='text-lg'>In Person</h2>
+                    <h1 className='text-xl font-bold'>#160 SOS Hyperlite Chamber Operationsr</h1>
+                    <h2 className='text-lg font-bold'>On Demand</h2>
+                    <h2 className='text-lg'>In Person/Online</h2>
                 </div>
                 <div>
-                <Button backgroundColor="Eggshell">See Syllabus</Button>
+                <Link href="/soshyperlitechamberoperations"><Button backgroundColor="Eggshell">See Syllabus</Button></Link>
                 </div>
         </div>
     );

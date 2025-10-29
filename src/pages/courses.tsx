@@ -147,7 +147,7 @@ export default function Courses() {
             <li>Emergency chamber evacuation</li>
           </ul>
           <p className="mb-6 text-xl ">
-            All certification pathways begin with the <strong>Chamber Core Competency</strong> course. From there,
+            All certification pathways begin with the <strong>#110 Hyperbaric Core Competencies</strong> course. From there,
             students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
@@ -163,8 +163,8 @@ export default function Courses() {
             <Course02/>
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
-            <Course03/>
             <Course05/>
+            <Course03/>
             <Course08/>
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10">

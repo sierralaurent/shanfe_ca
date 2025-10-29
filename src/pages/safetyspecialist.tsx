@@ -65,16 +65,16 @@ export default function SafetySpecialist() {
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Duration</h2>
-          <p className="mb-4">3 days in person</p>
+          <p className="mb-4">2 days in person</p>
           </div>
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Location</h2>
-          <p className="mb-4">Modern Medicine, Thunder Bay Ontario, Canada</p>
+          <p className="mb-4">Calgary, Alberta, Canada</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">August 23-25, 2025</p>
+          <p className="mb-4">February 13th to 14th</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>
@@ -86,6 +86,21 @@ export default function SafetySpecialist() {
             associated with the care of patients in a hyperbaric medical setting, develop a
             comprehensive safety program, and know how to conduct safe hyperbaric chamber
             operations in accordance with the current industry and regulatory standards.</p>
+            <ul className="list-disc list-inside mb-6">
+              <li>Hyperbaric safety management</li>
+              <li>Principles of risk management</li>
+              <li>Risk assessment process</li>
+              <li>Fire chemistry</li>
+              <li>Material selection</li>
+              <li>Medical gas safety</li>
+              <li>Regulatory environment</li>
+              <li>Chamber maintenance</li>
+              <li>Equipment risk</li>
+              <li>Mishaps</li>
+              <li>Off-label considerations for informed consent</li>
+              <li>Hyperbaric team roles and responsibilities</li>
+              <li>Emergency action plan</li>
+            </ul>
           <h2 className="text-2xl font-semibold mb-4">Who Should Attend:</h2>
           <p className="mb-4">This course is appropriate for hyperbaric technologists, respiratory therapists, nurses,
             physicians, and department managers of a hyperbaric facility, divers, occupational
