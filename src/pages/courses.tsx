@@ -11,6 +11,8 @@ import Course05 from "@/components/course05";
 import Course06 from "@/components/course06";
 import Course07 from "@/components/course07";
 import Course08 from "@/components/course08";
+import Course09 from "@/components/course09";
+import Course10 from "@/components/course10";
 import ScrollToTopButton from "@/components/scrollToTop";
 import CourseCalendar from "@/components/courseCalendar";
 import RegisterForm from "@/components/registerForm";
@@ -158,19 +160,25 @@ export default function Courses() {
           </div>
           <div className="flex flex-col items-center"> 
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
+            <Course09/>
             <Course01/>
             <Course04/>
-            <Course02/>
+            
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
+            <Course02/>
             <Course05/>
             <Course03/>
-            <Course08/>
+            
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10">
+            <Course08/>
+            <Course10/>
             <Course06/>
-            <Course07/>
             </div>  
+            <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10"></div>
+            <Course07/>
+            <div/>
             <div className="flex flex-col items-center pt-10 pb-10">
             <h3 className="text-3xl font-bold mb-4">Please Note:</h3>
           <ul className="list-disc list-inside mb-6">

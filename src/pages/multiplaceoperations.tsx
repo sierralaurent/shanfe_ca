@@ -8,7 +8,7 @@ import Script from "next/script";
 import Image from "next/image";
 import RegisterForm from '@/components/registerForm';
 
-export default function ChamberCoreCompetencyPage() {
+export default function multiplaceoperations() {
   return (
     <>
       <Head>
@@ -43,7 +43,7 @@ export default function ChamberCoreCompetencyPage() {
 
       <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
         <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-3xl font-bold mb-6">	#110 Hyperbaric Core Competencies</h1>
+          <h1 className="text-3xl font-bold mb-6">	#120 Multiplace Chamber Operator Course</h1>
 
           <div className="flex flex-col gap-1">
             <div className="content-center items-center">

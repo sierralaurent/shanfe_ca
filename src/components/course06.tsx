@@ -16,7 +16,7 @@ export default function Course06() {
             />
 
                 <div className='flex flex-col items-center gap-2 justify-evenly'>
-                    <h1 className='text-2xl font-bold'>#180 Hyperbaric Safety</h1>
+                    <h1 className='text-xl font-bold'>#180 Hyperbaric Safety</h1>
                     <h2 className='text-lg font-bold'>February 13-14</h2>
                     <h2 className='text-lg'>In Person</h2>
                 </div>

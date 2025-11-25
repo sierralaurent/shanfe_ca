@@ -8,7 +8,7 @@ export default function MechalBio() {
     >
       <Image
         className="rounded-3xl"
-        src="/images/female-avatar.jpg"
+        src="/images/mechal-photo.png"
         width={350}
         height={350}
         alt="Mechal Lavender - Executive Administrator and Director of Training"

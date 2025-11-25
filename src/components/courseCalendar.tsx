@@ -5,26 +5,42 @@ import Link from "next/link";
 
 // Course data
 const courses = [
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-06-17", end: "2025-06-21", type: "Live Stream" },
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-07-08", end: "2025-07-12", type: "Live Stream" },
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-08-12", end: "2025-08-16", type: "Live Stream" },
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-09-09", end: "2025-09-13", type: "Live Stream" },
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-10-21", end: "2025-10-25", type: "Live Stream" },
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-11-11", end: "2025-11-15", type: "Live Stream" },
-  { title: "HCO - Clinical Hyperbaric Medicine", start: "2025-12-09", end: "2025-12-13", type: "Live Stream" },
-  { title: "CCR - Chamber Operator Refresher", start: "2025-10-31", end: "2025-11-01", type: "St. John's, NL, CA" },
-  { title: "CCR - Chamber Operator Refresher", start: "2025-11-21", end: "2025-11-22", type: "Tobermory, ON, CA" },
-  { title: "Hyperbaric Safety Specialist", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
-  { title: "Chamber Core Competencies", start: "2026-02-11", end: "2026-02-13", type: "Calgary, AB, CA" },
-  { title: "Chamber Core Competencies", start: "2026-03-01", end: "2026-03-04", type: "Tobermory, ON, CA" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-06-17", end: "2025-06-21", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-07-08", end: "2025-07-12", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-08-12", end: "2025-08-16", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-09-09", end: "2025-09-13", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-10-21", end: "2025-10-25", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-11-11", end: "2025-11-15", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-12-09", end: "2025-12-13", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-01-13", end: "2026-01-17", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-02-03", end: "2026-02-07", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-03-10", end: "2026-03-14", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-04-14", end: "2026-04-18", type: "Live Stream" },    
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-05-05", end: "2026-05-09", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-06-09", end: "2026-06-13", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-07-14", end: "2026-07-18", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-08-11", end: "2026-08-15", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-09-15", end: "2026-09-19", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-10-06", end: "2026-10-10", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-11-10", end: "2026-11-14", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-12-08", end: "2026-12-12", type: "Live Stream" },
+  { title: "#120 - Multiplace Chamber Operator", start: "2025-10-31", end: "2025-11-01", type: "St. John's, NL, CA" },
+  { title: "#120 - Multiplace Chamber Operator", start: "2025-11-21", end: "2025-11-22", type: "Tobermory, ON, CA" },
+  { title: "#180 - Hyperbaric Safety", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
+  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-02-11", end: "2026-02-13", type: "Calgary, AB, CA" },
+  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-03-01", end: "2026-03-04", type: "Tobermory, ON, CA" },
 ];
 
 // Map course titles to URLs
 const courseLinks: Record<string, string> = {
-  "HCO - Clinical Hyperbaric Medicine": "/hyperbaric-medicine",
-  "Chamber Core Competencies": "/chamber-core-competency",
-  "Emergency Action Plan": "/emergency-action-plan",
-  "Hyperbaric Safety Specialist": "/safety-specialist"
+  "#100 - Introduction to Hyperbaric Medicine": "/introhyperbaricmedicine",
+  "#110 - Hyperbaric Core Compentencies": "/hyperbariccorecompetency",
+  "#120 - Multiplace Chamber Operator": "/multiplaceoperations",
+  "#130 - Monoplace Chamber Operator": "/hyperbaricmedicine",
+  "#140 - Tunnelling Chamber Operations Course": "/tunneloperations",
+  "#160 - SOS Hyperlite Chamber Operations": "/soshyperlitechamberoperations",
+  "#180 - Hyperbaric Safety": "/safetyspecialist",
+  "#190 - Inspection and Maintenance of Acrylics": "/acrylicsinspectionandmaintenance",
 };
 
 function getMonthName(monthIndex: number) {

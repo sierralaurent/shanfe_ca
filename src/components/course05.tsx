@@ -16,7 +16,7 @@ export default function Course05() {
             />
 
                 <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-2xl font-bold'>#140 Tunnelling Chamber Operations</h1>
+                    <h1 className='text-xl font-bold'>#140 Tunnelling Chamber Operations</h1>
                     <h2 className='text-lg font-bold'>On Demand</h2>
                     <h2 className='text-lg'>Online</h2>
                 </div>

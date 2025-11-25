@@ -16,10 +16,9 @@ export default function Course01() {
             />
 
                 <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-2xl font-bold'>#110 Hyperbaric Core Competencies</h1>
+                    <h1 className='text-xl font-bold'>#110 Hyperbaric Core Competencies</h1>
                     <div className='flex flex-col items-center'>
-                    <h2 className='text-lg font-bold'>February 10-12</h2>
-                    <h2 className='text-lg font-bold'>March 1-3</h2>
+                    <h2 className='text-lg font-bold'>February 10-12 & March 1-3</h2>
                     </div>
                     <h2 className='text-lg'>In Person</h2>
                 </div>

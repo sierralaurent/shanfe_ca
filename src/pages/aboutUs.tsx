@@ -12,6 +12,7 @@ import SherriBio from "@/components/Bio's/sherriBio";
 import FrancoisBio from "@/components/Bio's/francoisBio";
 import AaronBio from "@/components/Bio's/aaronBio";
 import MechalBio from "@/components/Bio's/mechalBio";
+import NatashaBio from "@/components/Bio's/natashaBio";
 import SierraBio from "@/components/Bio's/sierraBio";
 
 // ✅ Reusable staff card component
@@ -125,7 +126,7 @@ export default function About() {
                 <StaffCard
                   name="Mechal Lavender"
                   title="Executive Administrator and Director of Training"
-                  image="/images/female-avatar.jpg"
+                  image="/images/mechal-photo.png"
                   targetId="mechal"
                 />
               </div>
@@ -133,8 +134,16 @@ export default function About() {
                 <StaffCard
                   name="Sierra Laurent"
                   title="Brand and Marketing Director"
-                  image="/images/female-avatar.jpg"
+                  image="/images/sierra-photo.png"
                   targetId="sierra"
+                />
+              </div>
+              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+                <StaffCard
+                  name="Natasha Vlcek"
+                  title=" Executive Assistant "
+                  image="/images/natasha-photo.png"
+                  targetId="natasha"
                 />
               </div>
             </div>
@@ -178,6 +187,7 @@ export default function About() {
           <SherriBio />
           <MechalBio/>
           <SierraBio/>
+          <NatashaBio/>
           <FrancoisBio />
           <AaronBio />
           </div>

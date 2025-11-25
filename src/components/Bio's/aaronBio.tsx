@@ -4,7 +4,7 @@ export default function AaronBio() {
   return (
     <div
       id="aaron"
-      className="text-Chocolate rounded-3xl w-full flex flex-row tablet:flex-col items-start tablet:items-center p-8 gap-8 bg-Eggshell  max-w-full"
+      className="text-Chocolate rounded-3xl w-full flex flex-row tablet:flex-col items-start tablet:items-center p-8 gap-8 bg-Sky  max-w-full"
     >
       <Image
         className="rounded-3xl"

@@ -16,7 +16,7 @@ export default function Course07() {
             />
 
                 <div className='flex flex-col items-center gap-5'>
-                    <h1 className='text-2xl font-bold'>#190 Inspection and Maintenance of Acrylics</h1>
+                    <h1 className='text-xl font-bold'>#190 Inspection and Maintenance of Acrylics</h1>
                     <h2 className='text-lg font-bold'>February 15</h2>
                     <h2 className='text-lg'>In Person</h2>
                 </div>

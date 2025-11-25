@@ -5,7 +5,7 @@ export default function FrancoisBio() {
   return (
     <div
       id="francois"
-      className="text-Chocolate flex flex-row w-full bg-Sky items-center p-10 gap-10 rounded-3xl relative tablet:flex-col"
+      className="text-Chocolate flex flex-row w-full bg-Eggshell items-center p-10 gap-10 rounded-3xl relative tablet:flex-col"
     >
       <Image
         className="rounded-3xl"

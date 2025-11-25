@@ -16,6 +16,7 @@ const RegisterForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const courses = [
+    "#100 Introduction to Hyperbaric Medicine",
     "#110 Hyperbaric Core Competencies (Feb 10-12,)",
     "#110 Hyperbaric Core Competencies (March 1-3)",
     "#120 Multiplace Chamber Operator (Oct 30-31)",

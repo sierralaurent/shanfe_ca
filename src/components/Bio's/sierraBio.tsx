@@ -8,7 +8,7 @@ export default function SierraBio() {
     >
       <Image
         className="rounded-3xl"
-        src="/images/female-avatar.jpg"
+        src="/images/sierra-photo.png"
         width={350}
         height={350}
         alt="Sierra Laurent -  Brand and Marketing Director"
