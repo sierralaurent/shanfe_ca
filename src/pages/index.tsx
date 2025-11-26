@@ -2,6 +2,7 @@ import Image from "next/image";
 import Head from 'next/head'
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Link from "next/link";
 import Button from "@/components/button";
 import Card01 from "@/components/card01";
 import Card02 from "@/components/card02";
@@ -69,36 +70,96 @@ export default function Home() {
           <h1 className="text-3xl font-semibold">We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.</h1>
           </div>
       </div>
-      <div className={'flex flex-col gap-4'}> 
-      <div className={'flex flex-row tablet:flex-col gap-10'}>
-        <Image className='rounded-3xl '
-              src='/images/photo02.png'
-              width={400}
-              height={400}
-              alt='Hydrospace Group Incorporated'
-              />
-              <Image className='rounded-3xl '
-              src='/images/photo03.png'
-              width={400}
-              height={400}
-              alt='Hydrospace Group Incorporated'
-              />
+
+
+<div className={'flex flex-col gap-4 p-10'}> 
+
+  <div className={'flex flex-row tablet:flex-col gap-10'}>
+
+    {/* Consulting */}
+    <div className="relative group flex overflow-hidden rounded-3xl">
+      <Image
+        className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
+        src="/images/photo02.png"
+        width={400}
+        height={400}
+        alt="Hydrospace Group Incorporated"
+      />
+
+      {/* Gradient + Text */}
+      <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
+          <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
+            Consulting
+          </span>
+        </div>
       </div>
-     <div className={'flex flex-row tablet:flex-col gap-10'}>
-        <Image className='rounded-3xl '
-              src='/images/photo04.png'
-              width={400}
-              height={400}
-              alt='Hydrospace Group Incorporated'
-              />
-              <Image className='rounded-3xl '
-              src='/images/photo05.png'
-              width={400}
-              height={400}
-              alt='Hydrospace Group Incorporated'
-              />
+    </div>
+
+    {/* Audits */}
+    <div className="relative group flex overflow-hidden rounded-3xl">
+      <Image
+        className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
+        src="/images/photo03.png"
+        width={400}
+        height={400}
+        alt="Hydrospace Group Incorporated"
+      />
+
+      <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
+          <span className="text-8xl font-bold text-Sky drop-shadow-lg">
+            Audits
+          </span>
+        </div>
       </div>
-      </div>
+    </div>
+
+  </div>
+
+  <div className={'flex flex-row tablet:flex-col gap-10'}>
+
+    {/* Research */}
+    <div className="relative group flex overflow-hidden rounded-3xl">
+      <Image
+        className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
+        src="/images/photo04.png"
+        width={400}
+        height={400}
+        alt="Hydrospace Group Incorporated"
+      />
+
+      <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
+          <span className="text-8xl font-bold text-Sky drop-shadow-lg">
+            Research
+          </span>
+        </div>
+      </div></Link>
+    </div>
+
+    {/* Courses */}
+    <div className="relative group flex overflow-hidden rounded-3xl">
+      <Image
+        className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
+        src="/images/photo05.png"
+        width={400}
+        height={400}
+        alt="Hydrospace Group Incorporated"
+      />
+
+      <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
+          <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
+            Education
+          </span>
+        </div>
+      </div></Link>
+    </div>
+
+  </div>
+
+</div>
       <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
       
       <div className='flex flex-col w-full items-center'>

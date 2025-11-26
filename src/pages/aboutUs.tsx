@@ -14,6 +14,7 @@ import AaronBio from "@/components/Bio's/aaronBio";
 import MechalBio from "@/components/Bio's/mechalBio";
 import NatashaBio from "@/components/Bio's/natashaBio";
 import SierraBio from "@/components/Bio's/sierraBio";
+import TaliaBio from "@/components/Bio's/taliaBio";
 
 // ✅ Reusable staff card component
 function StaffCard({
@@ -140,10 +141,18 @@ export default function About() {
               </div>
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                 <StaffCard
-                  name="Natasha Vlcek"
-                  title=" Executive Assistant "
+                  name="Natasha Vleck"
+                  title="Executive Assistant "
                   image="/images/natasha-photo.png"
                   targetId="natasha"
+                />
+              </div>
+              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+                <StaffCard
+                  name="Talia Khazei"
+                  title="Research Assistant "
+                  image="/images/talia-photo.png"
+                  targetId="talia"
                 />
               </div>
             </div>
@@ -184,10 +193,11 @@ export default function About() {
 
 
 <div className="flex flex-col items-center gap-10 pt-10 pb-10 max-w-7xl">
-          <SherriBio />
+          <SherriBio/>
           <MechalBio/>
           <SierraBio/>
           <NatashaBio/>
+          <TaliaBio/>
           <FrancoisBio />
           <AaronBio />
           </div>

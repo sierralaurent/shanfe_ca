@@ -25,7 +25,6 @@ const courses = [
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-11-10", end: "2026-11-14", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-12-08", end: "2026-12-12", type: "Live Stream" },
   { title: "#120 - Multiplace Chamber Operator", start: "2025-10-31", end: "2025-11-01", type: "St. John's, NL, CA" },
-  { title: "#120 - Multiplace Chamber Operator", start: "2025-11-21", end: "2025-11-22", type: "Tobermory, ON, CA" },
   { title: "#180 - Hyperbaric Safety", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
   { title: "#110 - Hyperbaric Core Compentencies", start: "2026-02-11", end: "2026-02-13", type: "Calgary, AB, CA" },
   { title: "#110 - Hyperbaric Core Compentencies", start: "2026-03-01", end: "2026-03-04", type: "Tobermory, ON, CA" },
