@@ -129,13 +129,13 @@ export default function Home() {
         alt="Hydrospace Group Incorporated"
       />
 
-      <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+      <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
           <span className="text-8xl font-bold text-Sky drop-shadow-lg">
             Research
           </span>
         </div>
-      </div></Link>
+      </div>
     </div>
 
     {/* Courses */}
@@ -160,9 +160,17 @@ export default function Home() {
   </div>
 
 </div>
+<div className="flex items-center flex-col gap-20">
       <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
-      
-      <div className='flex flex-col w-full items-center'>
+      <div className="flex items-center flex-col gap-5">
+      <div className='flex flex-row w-full items-center gap-20'>
+        <Image
+              className=' '
+              src='/Icons/CAF-logo.png'
+              width={200}
+              height={200}
+              alt='Canadian Armed Forces'
+              />
         <Image
               className=' '
               src='/Icons/logo08.png'
@@ -170,6 +178,7 @@ export default function Home() {
               height={500}
               alt='Hydrospace Group Incorporated'
               />
+        </div>
         </div>
         <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-5 tablet:items-center'>
             <Image
@@ -194,7 +203,6 @@ export default function Home() {
               height={300}
               alt='Ripleys Aquariums'
               />
-          
         </div>
         <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-10 tablet:items-center'>
           <Image
@@ -218,6 +226,25 @@ export default function Home() {
               height={300}
               alt='The University of British Columbia UBC'
               />
+        </div>
+        <div className="flex items-center flex-col gap-5">
+        <div className='flex flex-row gap-20 tablet:flex-col tablet:gap-5 tablet:items-center'>
+            <Image
+              className=' '
+              src='/Icons/seaforce-logo.svg'
+              width={500}
+              height={300}
+              alt='Seaforce'
+              />
+              <Image
+              className=' '
+              src='/Icons/vancouver-coastal-health-logo.png'
+              width={400}
+              height={100}
+              alt='De Havilland Aircraft of Canada Limited'
+              />
+        </div>
+        </div>
         </div>
         
         <ScrollToTopButton />
