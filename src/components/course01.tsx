@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Course01() {
     
     return (
-        <div className="text-Chocolate flex flex-col gap bg-Eggshell items-center w-80 p-6 gap-5 rounded-3xl">
+        <div className="text-Chocolate flex flex-col gap bg-white shadow-2xl items-center w-80 p-6 gap-5 rounded-3xl">
             <Image
                 className="rounded-3xl"
                 src='/images/photo19.png'
@@ -18,7 +18,7 @@ export default function Course01() {
                 <div className='flex flex-col items-center gap-2'>
                     <h1 className='text-xl font-bold'>#110 Hyperbaric Core Competencies</h1>
                     <div className='flex flex-col items-center'>
-                    <h2 className='text-lg font-bold'>February 10-12 & March 1-3</h2>
+                    <h2 className='text-lg font-bold text-center'>February 10-12 & March 30-April 1</h2>
                     </div>
                     <h2 className='text-lg'>In Person</h2>
                 </div>

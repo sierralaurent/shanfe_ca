@@ -17,8 +17,8 @@ export default function Divercert() {
     <div className="text-Chocolate flex flex-row w-full gap bg-Sky items-center p-10 gap-10 rounded-3xl relative mobile:flex-col">
       <Image
         className="rounded-3xl"
-        src="/images/diver-cert.png"
-        width={350}
+        src="/images/diver-cert-mockup.png"
+        width={500}
         height={350}
         alt="Accredited by the Diver Certification Board of Canada"
       />

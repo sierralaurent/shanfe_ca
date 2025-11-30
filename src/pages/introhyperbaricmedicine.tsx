@@ -52,17 +52,17 @@ export default function introhyperbaricmedicine() {
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Duration</h2>
-          <p className="mb-4">5 days in person</p>
+          <p className="mb-4">5 days online</p>
           </div>
           
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">March 4th to 7th, 2026 - Tobermory, ON, CA.</p>
+          <p className="mb-4">Monthly - See Course calender HERE</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>
-          <p className="mb-4">$975</p>
+          <p className="mb-4">$975 - Discount available when booking multiple courses or services</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Course Description</h2>

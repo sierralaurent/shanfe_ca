@@ -6,10 +6,10 @@ import Link from 'next/link';
 export default function Course02() {
     
     return (
-        <div className="text-Chocolate flex flex-col gap bg-Eggshell items-center w-80 p-6 gap-5 rounded-3xl">
+        <div className="text-Chocolate flex flex-col gap bg-white shadow-2xl items-center w-80 p-6 gap-5 rounded-3xl">
             <Image
                 className="rounded-3xl"
-                src='/images/photo16.png'
+                src='/images/photo28.JPG'
                 width={200}
                 height={200}
                 alt=''

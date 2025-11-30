@@ -132,24 +132,39 @@ export default function Courses() {
 
           <h1 className="text-3xl font-bold mb-4 text-center">Welcome to Shanfe Research and Consulting Ltd.'s professional training programs for individuals
           seeking careers in hyperbaric operations.</h1>
-          <div className="flex items-center flex-col p-10">
-            <div className="m-4 mb-10">
-              <Divercert/>
-            </div>
-            
+          <div className="flex items-center flex-row tablet:flex-col p-5">
+            <Image
+              className=''
+              src='/images/diver-cert-mockup.png'
+              width={600}
+              height={600}
+              alt='Hyperbaric Training & Courses'
+              />
+              <div className="flex items-center flex-col gap-5 p-5">
+                <h1 className="text-3xl font-bold">Accredited by the Diver Certification Board of Canada</h1>
+                <p className="text-lg">
+            Shanfe Research & Consulting Ltd. is proudly recognized by the Diver Certification Board of Canada for our Hyperbaric Chamber Operator training.
+            </p>
+              </div>
           </div>
+          <div className="flex flex-col items-center mobile:flex-col">
           <p className="mb-4 text-xl ">
              Our comprehensive courses prepare participants for
             a wide range of roles including:
           </p>
+          <div className="flex flex-row gap-5">
           <ul className="list-disc text-xl  list-inside mb-10">
             <li>Clinical hyperbaric medicine</li>
             <li>Diving operations</li>
+          </ul>
+          <ul className="list-disc text-xl  list-inside mb-10">
             <li>Tunneling support</li>
             <li>Emergency chamber evacuation</li>
           </ul>
+            </div>
+            </div>
           <p className="mb-6 text-xl ">
-            All certification pathways begin with the <strong>#110 Hyperbaric Core Competencies</strong> course. From there,
+            All certification pathways include <strong>#110 Hyperbaric Core Competencies</strong> course. From there,
             students can pursue specialty certifications by the
             <strong> Divers Certification Board of Canada (DCBC)</strong>, in accordance with <em>CSA Z275.4 standards</em>.
           </p>
@@ -179,7 +194,7 @@ export default function Courses() {
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10"></div>
             <Course07/>
             <div/>
-            <div className="flex flex-col items-center pt-10 pb-10">
+            <div className="flex flex-col items-center pt-20 pb-10">
             <h3 className="text-3xl font-bold mb-4">Please Note:</h3>
           <ul className="list-disc list-inside mb-6">
             <li>Tuition fees do not include travel, textbooks, or chamber operator logbook.</li>
