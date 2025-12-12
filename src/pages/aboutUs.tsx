@@ -16,7 +16,7 @@ import NatashaBio from "@/components/Bio's/natashaBio";
 import SierraBio from "@/components/Bio's/sierraBio";
 import TaliaBio from "@/components/Bio's/taliaBio";
 import RobBio from "@/components/Bio's/robBio";
-import AngelaBio from "@/components/Bio's/AngelaBio";
+import AngieBio from "@/components/Bio's/angieBio";
 
 // ✅ Reusable staff card component
 function StaffCard({
@@ -229,7 +229,7 @@ export default function About() {
           <SierraBio/>
           <NatashaBio/>
           <TaliaBio/>
-          <AngelaBio/>
+          <AngieBio/>
           <FrancoisBio />
           <AaronBio />
           <RobBio/>

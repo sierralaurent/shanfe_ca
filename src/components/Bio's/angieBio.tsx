@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function AngelaBio() {
+export default function AngieBio() {
   return (
     <div
       id="angela"
