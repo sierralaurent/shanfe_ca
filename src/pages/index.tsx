@@ -51,49 +51,47 @@ export default function Home() {
     <div className='flex flex-col items-center'>
       <Image
         className='w-full relative tablet:hidden'
-        src='/images/Shanfe_Hero.png'
+        src='/images/shanfeHero.png'
         width={2000}
         height={2000}
-        alt='Hyperbaric & Hypobaric Consultancy Services'
+        alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
+We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.'
         />
         <Image
         className='desktop:hidden w-full relative'
-        src='/images/Shanfe_Hero_Phone.png'
+        src='/images/shanfeHeroMobile.png'
         width={2000}
         height={2000}
-        alt='Hyperbaric & Hypobaric Consultancy Services'
+        alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
+We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.'
         />
     <main className={`flex flex-col items-center gap-24 p-10 max-w-7xl mobile:p-8`}>
-      <div className={'max-w-7xl flex flex-col mobile:flex-col items-center gap-10 pt-10'}>
-        <h1 className="text-4xl font-bold text-center">Safety is at the core of everything SHANFE offers.</h1>
-        <div className='max-w-3xl'>
-          <h1 className="text-3xl font-semibold">We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.</h1>
-          </div>
+      <div className={'max-w-7xl flex flex-col mobile:flex-col items-center gap-8 pt-10'}>
+        <h1 className="text-4xl font-bold text-center">Welcome to SHANFE Research & Consulting LTD.</h1>
+        <h1 className="text-3xl text-center">Promoting safety in hyperbaric and hypobaric environments through…</h1>
       </div>
 
 
-<div className={'flex flex-col gap-4 p-10'}> 
+<div className={'flex flex-col gap-4'}> 
 
   <div className={'flex flex-row tablet:flex-col gap-10'}>
-
-    {/* Consulting */}
+      {/* Courses */}
     <div className="relative group flex overflow-hidden rounded-3xl">
       <Image
         className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
-        src="/images/photo02.png"
+        src="/images/photo05.png"
         width={400}
         height={400}
         alt="Hydrospace Group Incorporated"
       />
 
-      {/* Gradient + Text */}
-      <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+      <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
           <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
-            Consulting
+            Education
           </span>
         </div>
-      </div>
+      </div></Link>
     </div>
 
     {/* Audits */}
@@ -138,24 +136,26 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Courses */}
+    {/* Consulting */}
     <div className="relative group flex overflow-hidden rounded-3xl">
       <Image
         className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
-        src="/images/photo05.png"
+        src="/images/photo02.png"
         width={400}
         height={400}
         alt="Hydrospace Group Incorporated"
       />
 
-      <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+      {/* Gradient + Text */}
+      <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
           <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
-            Education
+            Consulting
           </span>
         </div>
-      </div></Link>
+      </div>
     </div>
+
 
   </div>
 
@@ -245,6 +245,13 @@ export default function Home() {
               />
         </div>
         </div>
+        <div className="flex items-center flex-row tablet:flex-col">
+           <Image src='/images/diver-cert-mockup.png' width={600} height={600} alt='Accredited by the Diver Certification Board of Canada' />
+              <div className="flex items-center flex-col gap-5 p-5">
+                <h1 className="text-3xl font-bold">Accredited by the Diver Certification Board of Canada</h1>
+                  <p className="text-lg">Shanfe Research & Consulting Ltd. is proudly recognized by the Diver Certification Board of Canada for our Hyperbaric Chamber Operator training.</p>
+                </div>
+             </div>
         </div>
         
         <ScrollToTopButton />

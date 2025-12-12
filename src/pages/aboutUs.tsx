@@ -16,6 +16,7 @@ import NatashaBio from "@/components/Bio's/natashaBio";
 import SierraBio from "@/components/Bio's/sierraBio";
 import TaliaBio from "@/components/Bio's/taliaBio";
 import RobBio from "@/components/Bio's/robBio";
+import AngelaBio from "@/components/Bio's/AngelaBio";
 
 // ✅ Reusable staff card component
 function StaffCard({
@@ -85,20 +86,33 @@ export default function About() {
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
+    <Image
+            className='w-full relative tablet:hidden'
+            src='/images/aboutUsHero.png'
+            width={2000}
+            height={2000}
+            alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
+    We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.'
+            />
+            <Image
+            className='desktop:hidden w-full relative'
+            src='/images/aboutUsHeroMobile.png'
+            width={2000}
+            height={2000}
+            alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
+    We promote safety in hyperbaric & hypobaric environments, diving, aerospace and hyperbaric oxygen therapy through education, audits, research and consulting.'
+            />
 
-      <main className="flex flex-col items-center p-24 mobile:p-8 bg-white scroll-smooth">
+      <main className="flex flex-col items-center p-24 pt-18 mobile:p-8 bg-white scroll-smooth">
 
-          <div className="flex flex-col p-10 gap-8 max-w-7xl">
-            <h1 className="text-6xl flex font-bold text-center">
-              Meet the SHANFE Team – Hyperbaric & Hypobaric Experts
-            </h1>
-            <h3 className="text-xl pb-10 text-center">
+          <div className="flex flex-col gap-8 max-w-7xl">
+            <h1 className="text-2xl text-center">
               At SHANFE, our team is made up of experienced professionals
               dedicated to advancing education in hyperbaric medicine, dive
               safety, and emergency response. Together, we deliver practical,
               real-world training backed by the latest in industry best
               practices.
-            </h3>
+            </h1>
 
         </div>
 
@@ -156,6 +170,14 @@ export default function About() {
                   targetId="talia"
                 />
               </div>
+              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+                <StaffCard
+                  name="Angela Wilton"
+                  title="Certified Hyperbaric Technician (CHT) "
+                  image="/images/female-avatar.jpg"
+                  targetId="angela"
+                />
+              </div>
             </div>
           </div>
 
@@ -207,9 +229,11 @@ export default function About() {
           <SierraBio/>
           <NatashaBio/>
           <TaliaBio/>
+          <AngelaBio/>
           <FrancoisBio />
           <AaronBio />
           <RobBio/>
+          
           </div>
         <ScrollToTopButton />
         <Footer />
