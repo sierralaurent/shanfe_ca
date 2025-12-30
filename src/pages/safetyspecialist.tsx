@@ -37,19 +37,16 @@ export default function SafetySpecialist() {
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
-<div className='flex flex-col items-center'>
-      <Image
-        className='w-full relative'
-        src='/images/HSS.png'
-        width={2000}
-        height={2000}
-        alt='Hyperbaric Safety Specialist Course'
-        />
-        </div>
 
-      <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
-        <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-3xl font-bold mb-6">Hyperbaric Safety Specialist</h1>
+      <main className="flex flex-col items-center gap-1 p-24 pt-3 pb-20 mobile:p-8 bg-white w-full">
+          <div className="text-Chocolate shadow-xl flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-10 mb-10 relative mobile:flex-col">
+           <Image className="rounded-3xl" src="/images/photo17.png" width={450} height={350} alt="" />
+              <div className="gap-5 flex flex-col">
+               <h1 className="text-5xl font-bold tablet:text-center">#180 Hyperbaric Safety Specialist</h1>
+                <p>This course is content rich and intense: you will learn how to safely operate a hyperbaric chamber and understand and apply decompression procedures and treatment protocols, manage diving-related medical emergencies, including decompression sickness, barotrauma, and nitrogen narcosis , ensure the safe and effective use of hyperbaric chambers as well as how to comply with relevant safety regulations and industry standards. </p>
+                  </div>
+               </div>
+        <div className="flex flex-col pt-5 w-full max-w-5xl">
           <p className="mb-4">
             This 3-day program provides the necessary tools and resources to fulfill the
             responsibilities of the Hyperbaric Safety Director or Safety Officer (as defined by the

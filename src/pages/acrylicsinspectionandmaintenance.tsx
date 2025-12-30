@@ -41,11 +41,15 @@ export default function acrylicsinspectionandmaintenance() {
 
               </div>
 
-      <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
+      <main className="flex flex-col items-center gap-1 p-24 pt-4 pb-20 mobile:p-8 bg-white w-full">
+        <div className="text-Chocolate shadow-xl flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-10 mb-10 relative mobile:flex-col">
+                   <Image className="rounded-3xl" src="/images/photo20.png" width={450} height={350} alt="" />
+                      <div className="gap-5 flex flex-col">
+                       <h1 className="text-5xl font-bold tablet:text-center">#190 Inspection and Maintenance of Acrylics</h1>
+                        <p>This course is designed for any chamber techs or operators that want to up their abilities in acrylic inspections including view ports and tubes. Learning appropriate cleaning agents and techniques to avoid damage, as well as when they may need replacing due to crazing and cracks. Learning PVHO standards</p>
+                          </div>
+                       </div>
         <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-2xl font-bold mb-6">#190 Inspection and Maintenance of Acrylics</h1>
-
-
           <div className="flex flex-col gap-1">
             <div className="content-center items-center">
           <h2 className="text-2xl font-semibold ">Pre-requisites</h2>

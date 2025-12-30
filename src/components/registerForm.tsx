@@ -18,16 +18,15 @@ const RegisterForm = () => {
   const courses = [
     "#100 Introduction to Hyperbaric Medicine",
     "#110 Hyperbaric Core Competencies (Feb 10-12,)",
-    "#110 Hyperbaric Core Competencies (March 1-3)",
-    "#120 Multiplace Chamber Operator (Oct 30-31)",
-    "#120 Multiplace Chamber Operator (Nov 20-22)",
-    "#130 Monoplace Chamber Operato",
+    "#110 Hyperbaric Core Competencies (Mar 1-3)",
+    "#120 Multiplace Chamber Operator (Mar 26-29)",
+    "#130 Monoplace Chamber Operator (Feb 8-9)",
     "#140 Tunnelling Chamber Operations",
     "#150 Diving Chamber Operations",
     "#160 SOS Hyperlite Chamber Operations",
     "#170 Compressed Air Worker",
-    "#180 Hyperbaric Safety",
-    "#190 Inspection and Maintenance of Acrylics"
+    "#180 Hyperbaric Safety (Feb 13-14)",
+    "#190 Inspection and Maintenance of Acrylics (Feb 15)"
 
   ];
 

@@ -28,6 +28,9 @@ const courses = [
   { title: "#180 - Hyperbaric Safety", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
   { title: "#110 - Hyperbaric Core Compentencies", start: "2026-02-11", end: "2026-02-13", type: "Calgary, AB, CA" },
   { title: "#110 - Hyperbaric Core Compentencies", start: "2026-03-31", end: "2026-04-02", type: "Tobermory, ON, CA" },
+  { title: "#130 - Monoplace Chamber Operator", start: "2026-02-08", end: "2026-02-10", type: "Calgary, AB, CA" },
+  { title: "#180 - Hyperbaric Safety", start: "2026-02-14", end: "2026-02-15", type: "Calgary, AB, CA" },
+  { title: "#190 - Inspection and Maintenance of Acrylics", start: "2026-02-15", end: "2026-02-16", type: "Calgary, AB, CA" },
 ];
 
 // Map course titles to URLs

@@ -40,8 +40,15 @@ export default function HyperbaricMedicinePage() {
       <div className='flex flex-col items-center'>
               </div>
       
-      <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
-        <div className="flex flex-col w-full max-w-5xl">
+      <main className="flex flex-col items-center gap-1 p-24 pt-5 pb-20 mobile:p-8 bg-white w-full">
+            <div className="text-Chocolate shadow-xl flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-10 mb-10 relative mobile:flex-col">
+                          <Image className="rounded-3xl" src="/images/photo28.JPG" width={450} height={350} alt="" />
+                          <div className="gap-5 flex flex-col">
+                            <h1 className="text-5xl font-bold tablet:text-center">#130 Monoplace Chamber Operator Course</h1>
+                            <p>This course focuses on patient grounding, how to correctly load a stretcher, air vs oxygen inside the chamber, patient flow, Pre-dive checks of the chamber, emergency procedures, chamber cleaning, time and record keeping and much more .</p>
+                          </div>
+                        </div>
+        <div className="flex flex-col pt-5 w-full max-w-5xl">
           <h1 className="text-2xl font-bold mb-6">#130 Monoplace Chamber Operator Course</h1>
 
           <div className="flex flex-col gap-1">

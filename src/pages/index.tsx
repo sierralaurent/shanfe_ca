@@ -87,7 +87,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
       <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
+          <span className="text-8xl mobile:text-6xl font-bold text-Eggshell drop-shadow-lg">
             Education
           </span>
         </div>
@@ -129,7 +129,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
       <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl font-bold text-Sky drop-shadow-lg">
+          <span className="text-8xl mobile:text-6xl font-bold text-Sky drop-shadow-lg">
             Research
           </span>
         </div>
@@ -149,7 +149,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       {/* Gradient + Text */}
       <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
+          <span className="text-8xl mobile:text-6xl font-bold text-Eggshell drop-shadow-lg">
             Consulting
           </span>
         </div>
@@ -163,7 +163,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 <div className="flex items-center flex-col gap-20">
       <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
       <div className="flex items-center flex-col gap-5">
-      <div className='flex flex-row w-full items-center gap-20'>
+      <div className='flex flex-row w-full mobile:flex-col items-center gap-20'>
         <Image
               className=' '
               src='/Icons/CAF-logo.png'

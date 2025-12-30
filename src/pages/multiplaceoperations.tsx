@@ -41,10 +41,15 @@ export default function multiplaceoperations() {
       
         </div>
 
-      <main className="flex flex-col items-center gap-1 p-24 pt-20 pb-20 mobile:p-8 bg-white w-full">
+      <main className="flex flex-col items-center gap-1 p-24 pt-8 pb-20 mobile:p-8 bg-white w-full">
+        <div className="text-Chocolate shadow-xl flex flex-row w-full gap bg-Eggshell items-center p-10 gap-10 rounded-3xl mt-10 mb-10 relative mobile:flex-col">
+                      <Image className="rounded-3xl" src="/images/photo29.png" width={350} height={350} alt="" />
+                      <div className="gap-5 flex flex-col">
+                        <h1 className="text-5xl font-bold tablet:text-center">#120 Multiplace Chamber Operator Course</h1>
+                        <p></p>
+                      </div>
+                    </div>
         <div className="flex flex-col w-full max-w-5xl">
-          <h1 className="text-3xl font-bold mb-6">	#120 Multiplace Chamber Operator Course</h1>
-
           <div className="flex flex-col gap-1">
             <div className="content-center items-center">
           <h2 className="text-2xl font-semibold ">Pre-requisites</h2>
