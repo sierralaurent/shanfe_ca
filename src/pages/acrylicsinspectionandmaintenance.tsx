@@ -66,7 +66,7 @@ export default function acrylicsinspectionandmaintenance() {
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">February 15th</p>
+          <p className="mb-4">April 27th</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

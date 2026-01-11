@@ -71,7 +71,7 @@ export default function SafetySpecialist() {
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">February 13th to 14th</p>
+          <p className="mb-4">April 25th to 26th</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

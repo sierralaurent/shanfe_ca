@@ -67,8 +67,7 @@ export default function ChamberCoreCompetencyPage() {
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mt-4">February 10th to 12th, 2026 - Calgary, AB, CA.</p>
-          <p className="mb-4">March 30th to April 1st, 2026 - Tobermory, ON, CA.</p>
+          <p className="mt-4">April 8th to 10th, 2026 - Calgary, AB, CA.</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

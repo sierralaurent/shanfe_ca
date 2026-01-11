@@ -17,7 +17,7 @@ export default function Course02() {
 
                 <div className='flex flex-col justify items-center gap-2'>
                     <h1 className='text-xl font-bold'>#130 Monoplace Chamber Operator</h1>
-                    <h2 className='text-lg font-bold'>February 8-9</h2>
+                    <h2 className='text-lg font-bold'>April 6-7</h2>
                     <h2 className='text-lg'>In Person</h2>
                 </div>
                 <div>

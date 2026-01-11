@@ -71,7 +71,7 @@ export default function HyperbaricMedicinePage() {
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">February 8th to 9th</p>
+          <p className="mb-4">April 6th to 7th</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

@@ -18,7 +18,7 @@ export default function Course01() {
                 <div className='flex flex-col items-center gap-2'>
                     <h1 className='text-xl font-bold'>#110 Hyperbaric Core Competencies</h1>
                     <div className='flex flex-col items-center'>
-                    <h2 className='text-lg font-bold text-center'>February 10-12 & March 30-April 1</h2>
+                    <h2 className='text-lg font-bold text-center'>April 8-9</h2>
                     </div>
                     <h2 className='text-lg'>In Person</h2>
                 </div>
