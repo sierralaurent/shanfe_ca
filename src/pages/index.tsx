@@ -137,7 +137,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
     </div>
 
     {/* Consulting */}
-    <div className="relative group flex overflow-hidden rounded-3xl">
+    <Link href="/consulting"><div className="relative group flex overflow-hidden rounded-3xl">
       <Image
         className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
         src="/images/photo02.png"
@@ -154,7 +154,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
           </span>
         </div>
       </div>
-    </div>
+    </div></Link>
 
 
   </div>

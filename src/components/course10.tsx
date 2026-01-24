@@ -17,7 +17,7 @@ export default function Course10() {
 
                 <div className='flex flex-col items-center gap-2'>
                     <h1 className='text-xl font-bold'>#170 Compressed Air Worker </h1>
-                    <h2 className='text-lg font-bold'>March 27-28</h2>
+                    <h2 className='text-lg font-bold'>TBA</h2>
                     <h2 className='text-lg'>In Person</h2>
                 </div>
                 <div>

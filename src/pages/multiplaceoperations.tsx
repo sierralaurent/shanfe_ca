@@ -63,7 +63,7 @@ export default function multiplaceoperations() {
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">March 26th to 29th, 2026 - Tobermory, ON, CA.</p>
+          <p className="mb-4">TBA</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

@@ -18,7 +18,7 @@ export default function Course04() {
                 <div className='flex flex-col items-center gap-2'>
                     <h1 className='text-xl font-bold'>#120 Multiplace Chamber Operator</h1>
                     <div className='flex flex-col items-center'>
-                    <h2 className='text-lg font-bold'>March 26-29</h2>
+                    <h2 className='text-lg font-bold'>TBA</h2>
                     </div>
                     <h2 className='text-lg'>In Person</h2>
                 </div>

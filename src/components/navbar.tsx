@@ -65,6 +65,15 @@ export default function NavBar() {
             >
               Courses
             </Link>
+            <Link
+              href="/consulting"
+              onClick={() => setMenuOpen(false)}
+              className={`px-4 py-2 text-2xl hover:bg-gray-100 ${
+                isLinkActive("/consulting") ? "font-extrabold" : "font-medium"
+              }`}
+            >
+              Consulting
+            </Link>
  
           </div>
         )}
