@@ -104,13 +104,13 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         alt="Hydrospace Group Incorporated"
       />
 
-      <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+      <Link href="/audits"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
           <span className="text-8xl font-bold text-Sky drop-shadow-lg">
             Audits
           </span>
         </div>
-      </div>
+      </div></Link>
     </div>
 
   </div>

@@ -71,7 +71,7 @@ export default function OperatorCourseSelector() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="max-w-5xl mx-auto bg-white shadow-2xl p-6 rounded-lg border border-Chocolate border-t-4 border-blue-600 flex flex-row mobile:flex-col items-center md:flex-row md:flex-row items-start"
+      className="max-w-5xl mx-auto bg-white shadow-2xl p-6 rounded-lg border border-Sky border-t-4 flex flex-row mobile:flex-col items-center md:flex-row md:flex-row items-start"
     >
       <div className="flex-shrink-0 mr-6 mb-6 md:mb-0">
         <Image
