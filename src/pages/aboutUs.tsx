@@ -141,7 +141,7 @@ export default function About() {
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                 <StaffCard
                   name="Mechal Lavender"
-                  title="Executive Administrator and Director of Training"
+                  title="Director of Education"
                   image="/images/mechal-photo.png"
                   targetId="mechal"
                 />

@@ -18,7 +18,7 @@ export default function MechalBio() {
         <div className="gap-2">
           <h1 className="text-4xl font-bold">Mechal Lavender</h1>
           <h3 className="text-xl font-semibold">
-            Executive Administrator and Director of Training
+            Director of Education
           </h3>
         </div>
 

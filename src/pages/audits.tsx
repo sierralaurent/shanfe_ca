@@ -21,19 +21,19 @@ const auditServices = [
     title: "Tunnelling Hyperbaric Intervention",
     description:
       "Specialized audits for hyperbaric tunnelling intervention environments.",
-    imageSrc: "/images/photo04.png",
+    imageSrc: "/images/photo02.png",
   },
   {
     title: "Hypobaric Operations",
     description:
       "Inspection and compliance verification for altitude and hypobaric systems.",
-    imageSrc: "/images/photo02.png",
+    imageSrc: "/images/photo30.jpg",
   },
   {
     title: "Occupational Diving Operations",
     description:
       "Safety and procedural audits supporting occupational diving programs.",
-    imageSrc: "/images/photo03.png",
+    imageSrc: "/images/photo31.jpg",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function Audits() {
 
           <p className="text-lg text-gray-700">
             We offer safety and operational audits aligned with the Canadian
-            Standards Association <strong>Z275.1</strong> standard.
+            Standards Association <strong>Z275</strong> standard.
           </p>
 
           <p className="text-lg text-gray-700">
@@ -191,10 +191,10 @@ export default function Audits() {
 
     <div className="flex flex-row gap-5">
       <ul className="gap-4 text-sm gap-4 list-disc list-inside">
-        <li>ASME PVHO-2</li>
-        <li>Risk Assessment Guide for Installation and Operation of Clinical Hyperbaric Facilities</li>
-        <li>NFPA 99</li>
-        <li>UHMS Hyperbaric Facility Design and Operations Guide</li>
+        <li>ASME PVHO</li>
+        <li>CSA Z275</li>
+        <li>NFPA 99 and 99B</li>
+        <li>Local and National regulations</li>
       </ul>
     </div>
   </div>
