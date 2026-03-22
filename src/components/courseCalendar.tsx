@@ -3,33 +3,44 @@
 import { useState } from "react";
 import Link from "next/link";
 
+// ✅ Parse dates in LOCAL time (fixes +1 day bug)
+function parseLocalDate(dateStr: string): Date {
+  const [year, month, day] = dateStr.split("-").map(Number);
+  return new Date(year, month - 1, day);
+}
+
+// ✅ Safe day difference (handles DST properly)
+function diffInDays(a: Date, b: Date) {
+  const MS = 1000 * 60 * 60 * 24;
+  return Math.round((a.getTime() - b.getTime()) / MS);
+}
+
 // Course data
 const courses = [
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-06-17", end: "2025-06-21", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-07-08", end: "2025-07-12", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-06-18", end: "2025-06-22", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-07-09", end: "2025-07-13", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-08-12", end: "2025-08-16", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-09-09", end: "2025-09-13", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-10-21", end: "2025-10-25", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-11-11", end: "2025-11-15", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2025-12-09", end: "2025-12-13", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-01-13", end: "2026-01-17", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-02-03", end: "2026-02-07", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-03-10", end: "2026-03-14", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-04-14", end: "2026-04-18", type: "Live Stream" },    
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-05-05", end: "2026-05-09", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-06-09", end: "2026-06-13", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-07-14", end: "2026-07-18", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-08-11", end: "2026-08-15", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-09-15", end: "2026-09-19", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-10-06", end: "2026-10-10", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-11-10", end: "2026-11-14", type: "Live Stream" },
-  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-12-08", end: "2026-12-12", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-01-12", end: "2026-01-15", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-02-02", end: "2026-02-05", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-03-09", end: "2026-03-12", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-04-13", end: "2026-04-16", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-05-04", end: "2026-05-07", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-06-08", end: "2026-06-11", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-07-13", end: "2026-07-16", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-08-10", end: "2026-08-13", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-09-14", end: "2026-09-17", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-10-05", end: "2026-10-08", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-11-09", end: "2026-11-12", type: "Live Stream" },
+  { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-12-07", end: "2026-12-10", type: "Live Stream" },
   { title: "#180 - Hyperbaric Safety", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
-  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-04-09", end: "2026-04-11", type: "Calgary, AB, CA" },
-  { title: "#130 - Monoplace Chamber Operator", start: "2026-04-07", end: "2026-04-08", type: "Calgary, AB, CA" },
-  { title: "#180 - Hyperbaric Safety", start: "2026-04-25", end: "2026-04-26", type: "Calgary, AB, CA" },
-  { title: "#180 - Hyperbaric Safety", start: "2026-04-26", end: "2026-04-27", type: "Calgary, AB, CA" },
-  { title: "#190 - Inspection and Maintenance of Acrylics", start: "2026-04-28", end: "2026-04-28", type: "Calgary, AB, CA" },
+  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-04-08", end: "2026-04-09", type: "Calgary, AB, CA" },
+  { title: "#130 - Monoplace Chamber Operator", start: "2026-04-06", end: "2026-04-06", type: "Calgary, AB, CA" },
+  { title: "#180 - Hyperbaric Safety", start: "2026-04-25", end: "2026-04-25", type: "Calgary, AB, CA" },
+  { title: "#190 - Inspection and Maintenance of Acrylics", start: "2026-04-27", end: "2026-04-26", type: "Calgary, AB, CA" },
 ];
 
 // Map course titles to URLs
@@ -58,6 +69,7 @@ function getCalendarStart(date: Date): Date {
 function getWeekRows(date: Date): Date[][] {
   const start = getCalendarStart(date);
   const rows: Date[][] = [];
+
   for (let w = 0; w < 6; w++) {
     const week: Date[] = [];
     for (let d = 0; d < 7; d++) {
@@ -67,6 +79,7 @@ function getWeekRows(date: Date): Date[][] {
     }
     rows.push(week);
   }
+
   return rows;
 }
 
@@ -116,38 +129,45 @@ export default function CourseCalendar() {
             );
           })}
 
-          {/* Render overlapping courses directly stacked (same top, z-index by duration) */}
+          {/* Courses */}
           {(() => {
             const weekCourses = courses.filter(course => {
-              const start = new Date(course.start);
-              const end = new Date(course.end);
+              const start = parseLocalDate(course.start);
+              const end = parseLocalDate(course.end);
+              end.setDate(end.getDate() + 1); // ✅ inclusive end
+
               return end >= week[0] && start <= week[6];
             });
 
             return weekCourses.map((course, i) => {
-              const start = new Date(course.start);
-              const end = new Date(course.end);
+              const start = parseLocalDate(course.start);
+              const end = parseLocalDate(course.end);
+              end.setDate(end.getDate() + 1); // ✅ inclusive
+
               const weekStart = week[0];
 
-              const firstDayInWeek = Math.max(0, Math.floor((Math.max(start.getTime(), weekStart.getTime()) - weekStart.getTime()) / (1000 * 60 * 60 * 24)));
-              const lastDayInWeek = Math.min(6, Math.floor((Math.min(end.getTime(), week[6].getTime()) - weekStart.getTime()) / (1000 * 60 * 60 * 24)));
+              const safeStart = start > weekStart ? start : weekStart;
+              const safeEnd = end < week[6] ? end : week[6];
+
+              const firstDayInWeek = Math.max(0, diffInDays(safeStart, weekStart));
+              const lastDayInWeek = Math.min(6, diffInDays(safeEnd, weekStart));
 
               const span = lastDayInWeek - firstDayInWeek + 1;
               const leftPercent = (firstDayInWeek / 7) * 100;
               const widthPercent = (span / 7) * 100;
 
-              // Shorter course = higher zIndex
-              const duration = (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24);
-              const zIndex = 100 - duration; // Short = on top
+              const duration = diffInDays(end, start);
+              const zIndex = 100 - duration;
 
               const commonStyle = {
                 left: `${leftPercent}%`,
                 width: `${widthPercent}%`,
-                top: `1.25rem`, // Same top for all
+                top: `1.25rem`,
                 zIndex,
               };
 
               const href = courseLinks[course.title];
+
               const content = (
                 <div className="truncate">
                   {course.title}
@@ -156,24 +176,24 @@ export default function CourseCalendar() {
               );
 
               return href ? (
-                 <Link
-                      key={course.title + i}
-                      href={href}
-                      className="absolute bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow border border-blue-300 hover:bg-blue-300 transition-colors"
-                      style={commonStyle}
-                      title={`${course.title} (${course.type})`}
-                    >
-                      {content}
-                    </Link>
-                  ) : (
-                    <div
-                      key={course.title + i}
-                      className="absolute bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow border border-blue-300 truncate"
-                      style={commonStyle}
-                      title={`${course.title} (${course.type})`}
-                    >
-                      {content}
-                    </div>
+                <Link
+                  key={course.title + i}
+                  href={href}
+                  className="absolute bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow border border-blue-300 hover:bg-blue-300 transition-colors"
+                  style={commonStyle}
+                  title={`${course.title} (${course.type})`}
+                >
+                  {content}
+                </Link>
+              ) : (
+                <div
+                  key={course.title + i}
+                  className="absolute bg-blue-200 text-blue-900 text-xs font-semibold px-2 py-1 rounded shadow border border-blue-300 truncate"
+                  style={commonStyle}
+                  title={`${course.title} (${course.type})`}
+                >
+                  {content}
+                </div>
               );
             });
           })()}

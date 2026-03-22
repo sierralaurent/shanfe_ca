@@ -81,7 +81,7 @@ export default function Courses() {
           
 
           <div className="flex items-center flex-col pb-10">
-            <h1 className="mb-6 mt-6 text-6xl">Course Calendar</h1>
+            <h1 className="mb-6 mt-6 text-6xl">Course Calender</h1>
             <CourseCalendar/>
           </div>
 
