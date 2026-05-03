@@ -170,14 +170,6 @@ export default function About() {
                   targetId="talia"
                 />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
-                <StaffCard
-                  name="Angela Wilton"
-                  title="Certified Hyperbaric Technician (CHT) "
-                  image="/images/female-avatar.jpg"
-                  targetId="angela"
-                />
-              </div>
             </div>
           </div>
 
@@ -197,7 +189,7 @@ export default function About() {
             <div className="flex flex-row flex-wrap gap-5 mobile:flex-col mobile:items-center w-full">
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                 <StaffCard
-                  name="François"
+                  name="François Burman"
                   title="Course Instructor"
                   image="/images/francois-photo.png"
                   targetId="francois"
@@ -205,7 +197,7 @@ export default function About() {
               </div>
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                   <StaffCard
-                    name="Aaron"
+                    name="Aaron Griffin"
                     title="Course Instructor"
                     image="/images/aaron-griffin.png"
                     targetId="aaron"
@@ -213,7 +205,7 @@ export default function About() {
               </div>
               <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
                   <StaffCard
-                    name="Robert"
+                    name="Robert Sheffield"
                     title="Course Instructor"
                     image="/images/rob-photo.png"
                     targetId="rob"
@@ -229,10 +221,9 @@ export default function About() {
           <SierraBio/>
           <NatashaBio/>
           <TaliaBio/>
-          <AngieBio/>
-          <FrancoisBio />
           <AaronBio />
           <RobBio/>
+          <FrancoisBio />
           
           </div>
         <ScrollToTopButton />
