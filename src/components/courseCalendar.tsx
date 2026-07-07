@@ -36,11 +36,9 @@ const courses = [
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-10-05", end: "2026-10-08", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-11-09", end: "2026-11-12", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-12-07", end: "2026-12-10", type: "Live Stream" },
-  { title: "#180 - Hyperbaric Safety", start: "2025-08-23", end: "2025-08-26", type: "Thunder Bay, Ontario, CA" },
-  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-04-08", end: "2026-04-09", type: "Calgary, AB, CA" },
-  { title: "#130 - Monoplace Chamber Operator", start: "2026-04-06", end: "2026-04-06", type: "Calgary, AB, CA" },
-  { title: "#180 - Hyperbaric Safety", start: "2026-04-25", end: "2026-04-25", type: "Calgary, AB, CA" },
-  { title: "#190 - Inspection and Maintenance of Acrylics", start: "2026-04-27", end: "2026-04-26", type: "Calgary, AB, CA" },
+  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-09-19", end: "2026-09-20", type: "St. John's, NL, CA" },
+  { title: "#130 - Monoplace Chamber Operator", start: "2026-09-05", end: "2026-09-05", type: "St. John's, NL, CA" },
+  { title: "#120 - Multiplace Chamber Operator", start: "2026-09-22", end: "2026-09-24", type: "St. John's, NL, CA" },
 ];
 
 // Map course titles to URLs

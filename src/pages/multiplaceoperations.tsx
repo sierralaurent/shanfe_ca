@@ -59,11 +59,14 @@ export default function multiplaceoperations() {
           <h2 className="text-2xl font-semibold">Duration</h2>
           <p className="mb-4">4 days in person</p>
           </div>
-          
+          <div className="content-center">
+          <h2 className="text-2xl font-semibold">Location</h2>
+          <p className="mb-4">St. John's, Newfoundland, Canada</p>
+          </div>
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">TBA</p>
+          <p className="mb-4">September 19th to 22nd</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

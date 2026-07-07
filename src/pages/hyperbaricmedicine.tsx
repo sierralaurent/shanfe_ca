@@ -67,11 +67,11 @@ export default function HyperbaricMedicinePage() {
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Location</h2>
-          <p className="mb-4">Calgary, Alberta, Canada</p>
+          <p className="mb-4">Mississauga, Ontario, Canada</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">April 6th to 7th</p>
+          <p className="mb-4">September 5th & 6th</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>
