@@ -59,7 +59,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
     <main className={`flex flex-col items-center gap-24 p-10 max-w-7xl mobile:p-8`}>
       <div className={'max-w-7xl flex flex-col mobile:flex-col items-center gap-8 pt-10'}>
         <h1 className="text-4xl font-bold text-center">Advancing Aerospace Safety Through Expertise</h1>
-        <h1 className="text-3xl text-center">Shanfe Aerospace partners with government agencies, healthcare organizations, and industry professionals to deliver specialized training, compliance audits, consulting, and research that improve safety and operational performance in aerospace and hypobaric environments.</h1>
+        <h1 className="text-3xl text-center">Shanfe Aerospace partners with government agencies, healthcare organizations, and industry professionals to deliver specialized training, compliance audits, consulting, and research that improve safety and operational performance in aerospace, enriched oxygen operations, and hyper/hypobaric environments.</h1>
       </div>
 
 

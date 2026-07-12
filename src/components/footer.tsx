@@ -9,7 +9,7 @@ export default function Footer() {
            <div className={'text-Chocolate rounded-3xl w-full flex flex-col items-center p-8 gap-8 bg-Sky divide-y-4 divide-Chocolate max-w-7xl'}>
             <div className={'flex flex-row items-end justify-between gap-8 tablet:flex-col'}>
                 <div className={'w-8/12 flex flex-col gap-8 tablet:w-full'}>
-                    <h1 className='text-3xl font-bold tablet:text-2xl mobile:text-lg'>Ready to elevate your hyperbaric safety standards and training programs?</h1>
+                    <h1 className='text-3xl font-bold tablet:text-2xl mobile:text-lg'>Customized solutions for Aerospace, Diving, Hyperbaric safety, education, research and consulting needs.</h1>
                     <h1 className='text-xl tablet:text-xl mobile:text-lg'>Connect with Shanfe today to ensure your organization's safety and compliance goals are exceeded.</h1>
                 </div>
                 <div className='items-end text-right'>

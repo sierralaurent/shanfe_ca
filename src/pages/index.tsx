@@ -67,10 +67,8 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         />
     <main className={`flex flex-col items-center gap-24 p-10 max-w-7xl mobile:p-8`}>
       <div className={'max-w-7xl flex flex-col mobile:flex-col items-center gap-8 pt-10'}>
-        <h1 className="text-4xl font-bold text-center">Welcome to SHANFE</h1>
-        <h1 className="text-3xl text-center">Promoting safety in hyperbaric and hypobaric environments.</h1>
+        <h1 className="text-4xl font-bold text-center">Welcome to SHANFE LTD.</h1>      
       </div>
-
 
 <div className={'flex flex-col gap-4 '}> 
 
@@ -79,7 +77,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
     <div className="relative group flex overflow-hidden max-w-2xl rounded-3xl">
       <Image
         className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
-        src="/images/Aerospace/aerospace-photo01.png"
+        src="/images/aerospace/aerospace-photo01.png"
         width={200}
         height={200}
         alt="Hydrospace Group Incorporated"
@@ -117,7 +115,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
 </div>
 <div className="flex items-center flex-col gap-20">
-      <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
+      <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hypobaric safety and compliance.</h1>
       <div className="flex items-center flex-col gap-5">
       <div className='flex flex-row w-full mobile:flex-col items-center gap-20'>
         <Image

@@ -81,12 +81,11 @@ export default function AerospaceAudits() {
             </div>
 
         <section className="w-full flex flex-col gap-12 max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold">Clinical Audit Program</h2>
+          <h2 className="text-4xl font-bold">Audit Program</h2>
 
           <p className="text-lg text-gray-700">
             We offer safety and operational audits aligned with the Canadian
-            Standards Association <strong>Z275</strong> standard.
-          </p>
+            Standards Association <strong>Z275.1</strong>, NFPA & ASME-PVHO standards.</p>
 
           <p className="text-lg text-gray-700">
             Our audit program includes review of key documentation combined with an onsite
