@@ -3,16 +3,16 @@ import Head from 'next/head';
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Button from "@/components/button";
-import Course01 from "@/components/course01";
-import Course02 from "@/components/course02";
-import Course03 from "@/components/course03";
-import Course04 from "@/components/course04";
-import Course05 from "@/components/course05";
-import Course06 from "@/components/course06";
-import Course07 from "@/components/course07";
-import Course08 from "@/components/course08";
-import Course09 from "@/components/course09";
-import Course10 from "@/components/course10";
+import Course110 from "@/components/course110";
+import Course120 from "@/components/course120";
+import Course130 from "@/components/course130";
+import Course140 from "@/components/course140";
+import Course150 from "@/components/course150";
+import Course160 from "@/components/course160";
+import Course170 from "@/components/course170";
+import Course180 from "@/components/course180";
+import Course190 from "@/components/course190";
+import Course100 from "@/components/course100";
 import ScrollToTopButton from "@/components/scrollToTop";
 import CourseCalendar from "@/components/courseCalendar";
 import OperatorCourseSelector from "@/components/operatorCourseSelector";
@@ -88,22 +88,22 @@ export default function Courses() {
           <div id="all-courses" className="flex flex-col items-center"> 
             <h1 className="mb-10 mt-6 text-4xl font-bold">All Courses</h1>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
-              <Course09/>
-              <Course01/>
-              <Course04/>
+              <Course100/>
+              <Course110/>
+              <Course120/>
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
-              <Course02/>
-              <Course05/>
-              <Course03/>
+              <Course130/>
+              <Course140/>
+              <Course150/>
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10">
-              <Course08/>
-              <Course10/>
-              <Course06/>
+              <Course160/>
+              <Course170/>
+              <Course180/>
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full justify-center gap-20 pt-10 pb-10"></div>
-            <Course07/>
+            <Course190/>
           </div>
 
           <div className="flex flex-col items-center pt-20 pb-10">

@@ -3,25 +3,26 @@ import { useState } from "react";
 import Button from "./button";
 import Link from 'next/link';
 
-export default function Course08() {
+export default function Course120() {
     
     return (
         <div className="text-Chocolate flex flex-col gap bg-white shadow-2xl items-center w-80 p-6 gap-5 rounded-3xl">
             <Image
                 className="rounded-3xl"
-                src='/images/photo18.png'
+                src='/images/photo22.png'
                 width={200}
                 height={200}
                 alt=''
             />
 
                 <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-xl font-bold'>#160 SOS Hyperlite Chamber Operations</h1>
-                    <h2 className='text-lg font-bold'>On Demand</h2>
+                    <h1 className='text-xl font-bold'>#120 Multiplace Chamber Operator</h1>
+                    <div className='flex flex-col items-center'>
+                    </div>
                     <h2 className='text-lg'>In Person</h2>
                 </div>
                 <div>
-                <Link href="/soshyperlitechamberoperations"><Button backgroundColor="Eggshell">See Syllabus</Button></Link>
+                <Link href="/diving/courses/multiplaceoperations"><Button backgroundColor="Eggshell">See Syllabus</Button></Link>
                 </div>
         </div>
     );

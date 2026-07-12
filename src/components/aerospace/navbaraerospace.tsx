@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function NavBar() {
+export default function NavBarAerospace() {
   const router = useRouter();
 
   const [openMenu, setOpenMenu] = useState<string | null>(null);
@@ -30,12 +30,12 @@ export default function NavBar() {
   return (
     <nav className="w-full flex items-center justify-between p-5 text-Chocolate relative">
       {/* Logo */}
-      <Link href="/">
+      <Link href="/aerospace/aerospaceandhypobaricshome">
         <Image
           className="hover:scale-110 transition-transform"
-          src="/LogoMark300ppi.png"
-          width={150}
-          height={150}
+          src="/images/aerospace/shanfeaerospace.png"
+          width={100}
+          height={100}
           alt="Logo"
         />
       </Link>
@@ -60,7 +60,7 @@ export default function NavBar() {
                 href="/aerospace/aerospaceandhypobaricshome"
                 onClick={() => setOpenMenu(null)}
                 className={`px-4 py-2 hover:bg-gray-100 ${
-                  isLinkActive("/aerospaceandhypobaricshome") ? "font-extrabold" : ""
+                  isLinkActive("/aerospace/aerospaceandhypobaricshome") ? "font-extrabold" : ""
                 }`}
               >
                 Home
@@ -69,7 +69,7 @@ export default function NavBar() {
                 href="/aerospace/aerospaceaboutus"
                 onClick={() => setOpenMenu(null)}
                 className={`px-4 py-2 hover:bg-gray-100 ${
-                  isLinkActive("/aboutUs") ? "font-extrabold" : ""
+                  isLinkActive("/aerospace/aerospaceaboutus") ? "font-extrabold" : ""
                 }`}
               >
                 About Us
@@ -79,7 +79,7 @@ export default function NavBar() {
                 href="/aerospace/aerospacecourses"
                 onClick={() => setOpenMenu(null)}
                 className={`px-4 py-2 hover:bg-gray-100 ${
-                  isLinkActive("/courses") ? "font-extrabold" : ""
+                  isLinkActive("/aerospace/aerospacecourses") ? "font-extrabold" : ""
                 }`}
               >
                 Courses
@@ -89,7 +89,7 @@ export default function NavBar() {
                 href="/aerospace/aerospaceaudits"
                 onClick={() => setOpenMenu(null)}
                 className={`px-4 py-2 hover:bg-gray-100 ${
-                  isLinkActive("/audits") ? "font-extrabold" : ""
+                  isLinkActive("/aerospace/aerospaceaudits") ? "font-extrabold" : ""
                 }`}
               >
                 Audits

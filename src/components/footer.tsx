@@ -27,7 +27,7 @@ export default function Footer() {
                     alt=''
                     />
                     <div className={'flex flex-col items-end'}>
-                        <h1 className='items-end text-right'>© Shanfe Research and Consulting, 2025</h1>
+                        <h1 className='items-end text-right'>© Shanfe Research and Consulting, 2026</h1>
                         <h1 className='items-end text-right'>All Rights Reserved</h1>
                     </div>
                 </div>
