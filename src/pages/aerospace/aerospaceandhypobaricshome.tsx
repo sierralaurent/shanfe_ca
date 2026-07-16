@@ -81,11 +81,11 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         <Image
              className=''
              src="/Icons/arrow-blue.png"
-             width={100}
+             width={90}
              height={60}
              alt='shanfe aerospace education and courses'
               />
-          <h1 className="text-8xl font-bold text-Sky drop-shadow-lg">Education</h1>
+          <h1 className="text-7xl font-bold text-Sky drop-shadow-lg">Education</h1>
         </div>
       </div></Link>
     </div>
@@ -105,11 +105,11 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         <Image
              className=''
              src="/Icons/arrow-eggshell.png"
-             width={100}
+             width={90}
              height={60}
              alt='shanfe aerospace audits'
               />
-          <h1 className="text-8xl font-bold text-Eggshell drop-shadow-lg">Audits</h1>
+          <h1 className="text-7xl font-bold text-Eggshell drop-shadow-lg">Audits</h1>
         </div>
       </div></Link>
     </div>
