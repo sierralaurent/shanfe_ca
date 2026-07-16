@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavBarAerospace from "@/components/aerospace/navbaraerospace";
 import Footer from "@/components/footer";
 import Button from "@/components/button";
-import Course180 from "@/components/course180";
+import Course180Hypo from "@/components/course180-hypo";
 import Course160 from "@/components/course160";
 import Course200 from "@/components/course200";
 import Course210 from "@/components/course210";
@@ -40,8 +40,8 @@ export default function AerospaceCourses() {
       </Script>
       <div className="sticky top-0 z-50"><NavBarAerospace /></div>
       <div className='flex flex-col items-center'>
-        <Image className='w-full relative tablet:hidden' src='/images/aerospace/courses_hero.png' width={2000} height={2000} alt='Hyperbaric Training & Courses' />
-        <Image className='desktop:hidden w-full relative' src='/images/courses_hero_mobile.png' width={2000} height={2000} alt='Hyperbaric Training & Courses' />
+        <Image className='w-full relative tablet:hidden' src='/images/aerospace/aerospace-courses-hero.png' width={2000} height={2000} alt='Hyperbaric Training & Courses' />
+        <Image className='desktop:hidden w-full relative' src='/images/aerospace/aerospace-courses-hero-mobile.png' width={2000} height={2000} alt='Hyperbaric Training & Courses' />
       </div>
       <main className="flex flex-col items-center p-24 pb-20 pt-20 mobile:p-8 bg-white w-full">
         <div className="w-full max-w-5xl">
@@ -65,7 +65,7 @@ export default function AerospaceCourses() {
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
               <Course160/>
               <Course200/>
-              <Course180/>
+              <Course180Hypo/>
             </div>
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
               <Course220/>

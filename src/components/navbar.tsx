@@ -43,7 +43,7 @@ export default function NavBar() {
       {/* Navigation */}
       <div
         ref={menuRef}
-        className="flex items-center gap-10 text-xl font-medium"
+        className="flex items-center gap-10 text-xl mobile:text-lg font-medium"
       >
         {/* Aerospace */}
         <div

@@ -84,11 +84,15 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       />
 
       <Link href="/aerospace/aerospaceandhypobaricshome"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-7xl mobile:text-4xl font-bold text-Eggshell drop-shadow-lg">
-            Aerospace & Hypobarics
-          </span>
-        </div>
+        <div className="w-full p-4 bg-gradient-to-t from-black/70 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+          <Image className=''
+                 src="/aerospace-logo-fullColour.png"
+                 width={120}
+                 height={120}
+                 alt='shanfe aerospace education and courses'
+                 />
+              <h1 className="text-5xl mobile:text-3xl font-bold text-Eggshell drop-shadow-lg">Aerospace & Hypobarics</h1>
+          </div>
       </div></Link>
     </div>
 
@@ -103,11 +107,15 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       />
 
       <Link href="/diving/divingandhyperbaricshome"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-7xl mobile:text-4xl font-bold text-Sky drop-shadow-lg">
-            Diving & Hyperbarics
-          </span>
-        </div>
+        <div className="w-full p-4 bg-gradient-to-t from-black/70 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+          <Image className=''
+                 src="/Logo-Color.png"
+                 width={100}
+                 height={100}
+                 alt='shanfe aerospace education and courses'
+                 />
+              <h1 className="text-5xl mobile:text-3xl font-bold text-Sky drop-shadow-lg">Diving & Hyperbarics</h1>
+          </div>
       </div></Link>
     </div>
 

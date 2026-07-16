@@ -76,12 +76,17 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         alt="Hydrospace Group Incorporated"
       />
 
-      <Link href="/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl mobile:text-6xl font-bold text-Eggshell drop-shadow-lg">
-            Education
-          </span>
-        </div>
+      <Link href="/diving/courses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+                <Image
+                     className=''
+                     src="/Icons/arrow-eggshell.png"
+                     width={80}
+                     height={60}
+                     alt='shanfe hyperbaric and diving education and courses'
+                      />
+                  <h1 className="text-7xl mobile:text-5xl font-bold text-Eggshell drop-shadow-lg">Education</h1>
+                </div>
       </div></Link>
     </div>
 
@@ -95,12 +100,17 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         alt="Hydrospace Group Incorporated"
       />
 
-      <Link href="/audits"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl font-bold text-Sky drop-shadow-lg">
-            Audits
-          </span>
-        </div>
+      <Link href="/diving/audits"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+                <Image
+                     className=''
+                     src="/Icons/arrow-blue.png"
+                     width={80}
+                     height={60}
+                     alt='shanfe hyperbaric and diving education and courses'
+                      />
+                  <h1 className="text-7xl mobile:text-5xl font-bold text-Sky drop-shadow-lg">Audits</h1>
+                </div>
       </div></Link>
     </div>
 
@@ -119,16 +129,21 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       />
 
       <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl mobile:text-6xl font-bold text-Sky drop-shadow-lg">
-            Research
-          </span>
-        </div>
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+                <Image
+                     className=''
+                     src="/Icons/arrow-blue.png"
+                     width={80}
+                     height={60}
+                     alt='shanfe aerospace education and courses'
+                      />
+                  <h1 className="text-7xl mobile:text-5xl font-bold text-Sky drop-shadow-lg">Research</h1>
+                </div>
       </div>
     </div>
 
     {/* Consulting */}
-    <Link href="/consulting"><div className="relative group flex overflow-hidden rounded-3xl">
+    <Link href="/diving/consulting"><div className="relative group flex overflow-hidden rounded-3xl">
       <Image
         className="w-full h-auto transition-all duration-500 group-hover:brightness-125 group-hover:scale-[1.03]"
         src="/images/photo02.png"
@@ -139,11 +154,16 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
       {/* Gradient + Text */}
       <div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl mobile:text-6xl font-bold text-Eggshell drop-shadow-lg">
-            Consulting
-          </span>
-        </div>
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+                <Image
+                     className=''
+                     src="/Icons/arrow-eggshell.png"
+                     width={80}
+                     height={60}
+                     alt='shanfe aerospace education and courses'
+                      />
+                  <h1 className="text-7xl mobile:text-5xl font-bold text-Eggshell drop-shadow-lg">Consulting</h1>
+                </div>
       </div>
     </div></Link>
 

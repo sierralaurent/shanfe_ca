@@ -85,7 +85,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
              height={60}
              alt='shanfe aerospace education and courses'
               />
-          <h1 className="text-7xl font-bold text-Sky drop-shadow-lg">Education</h1>
+          <h1 className="text-7xl mobile:text-5xl font-bold text-Sky drop-shadow-lg">Education</h1>
         </div>
       </div></Link>
     </div>
@@ -109,7 +109,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
              height={60}
              alt='shanfe aerospace audits'
               />
-          <h1 className="text-7xl font-bold text-Eggshell drop-shadow-lg">Audits</h1>
+          <h1 className="text-7xl mobile:text-5xl font-bold text-Eggshell drop-shadow-lg">Audits</h1>
         </div>
       </div></Link>
     </div>
@@ -119,7 +119,6 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
 </div>
 <div className="flex items-center flex-col gap-10">
-      <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
       <div className="flex items-center flex-col gap-10">
       <div className='flex flex-row w-full mobile:flex-col items-center gap-20'>
         <Image

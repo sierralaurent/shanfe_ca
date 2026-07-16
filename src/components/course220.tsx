@@ -9,7 +9,7 @@ export default function Course220() {
         <div className="text-Chocolate flex flex-col gap bg-white shadow-2xl items-center w-80 p-6 gap-5 rounded-3xl">
             <Image
                 className="rounded-3xl"
-                src='/images/aerospace/aerospace-photo12.png'
+                src='/images/aerospace/aerospace-photo13.png'
                 width={200}
                 height={200}
                 alt=''

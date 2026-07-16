@@ -28,7 +28,7 @@ export default function NavBarAerospace() {
   }, []);
 
   return (
-    <nav className="w-full flex items-center justify-between p-5 text-Chocolate relative">
+    <nav className="w-full flex items-center justify-between p-5 mobile:text-lg text-Chocolate relative">
       {/* Logo */}
       <Link href="/">
         <Image
@@ -43,7 +43,7 @@ export default function NavBarAerospace() {
       {/* Navigation */}
       <div
         ref={menuRef}
-        className="flex items-center gap-10 text-xl font-medium"
+        className="flex items-center gap-5 text-xl font-medium"
       >
         {/* Aerospace */}
         <div
