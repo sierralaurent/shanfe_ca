@@ -4,10 +4,12 @@ import Link from "next/link";
 import NavBarAerospace from "@/components/aerospace/navbaraerospace";
 import Footer from "@/components/footer";
 import Button from "@/components/button";
-import Course120 from "@/components/course120";
+import Course180 from "@/components/course180";
 import Course160 from "@/components/course160";
 import Course200 from "@/components/course200";
 import Course210 from "@/components/course210";
+import Course220 from "@/components/course220";
+import Course230 from "@/components/course230";
 import ScrollToTopButton from "@/components/scrollToTop";
 import CourseCalendar from "@/components/courseCalendar";
 import OperatorCourseSelector from "@/components/operatorCourseSelector";
@@ -63,7 +65,12 @@ export default function AerospaceCourses() {
             <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
               <Course160/>
               <Course200/>
+              <Course180/>
+            </div>
+            <div className="flex flex-row mobile:flex-col mobile:items-center w-full gap-20 pt-10 mb-14">
+              <Course220/>
               <Course210/>
+              <Course230/>
             </div>
           </div>
 

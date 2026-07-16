@@ -17,7 +17,7 @@ import NatashaBio from "@/components/Bio's/natashaBio";
 import SierraBio from "@/components/Bio's/sierraBio";
 import TaliaBio from "@/components/Bio's/taliaBio";
 import RobBio from "@/components/Bio's/robBio";
-import AngieBio from "@/components/Bio's/angieBio";
+import BobBio from "@/components/Bio's/bobBio";
 
 // ✅ Reusable staff card component
 function StaffCard({
@@ -89,7 +89,7 @@ export default function AerospaceAboutUs() {
       </div>
     <Image
             className='w-full relative tablet:hidden'
-            src='/images/aboutUsHero.png'
+            src='/images/aerospace/aerospace-team-hero.png'
             width={2000}
             height={2000}
             alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
@@ -97,7 +97,7 @@ export default function AerospaceAboutUs() {
             />
             <Image
             className='desktop:hidden w-full relative'
-            src='/images/aboutUsHeroMobile.png'
+            src='/images/aerospace/aerospace-team-hero-mobile.png'
             width={2000}
             height={2000}
             alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
@@ -106,13 +106,12 @@ export default function AerospaceAboutUs() {
 
       <main className="flex flex-col items-center p-24 pt-18 mobile:p-8 bg-white scroll-smooth">
 
-          <div className="flex flex-col gap-8 max-w-7xl">
+          <div className="flex flex-col items-center gap-8 max-w-7xl">
+            <h1 className='text-4xl font-bold'>Meet the Experts Behind Safer Aerospace Operations</h1>
             <h1 className="text-2xl text-center">
-              At SHANFE Aerospace, our team is made up of experienced professionals
-              dedicated to advancing education in hyperbaric medicine, dive
-              safety, and emergency response. Together, we deliver practical,
-              real-world training backed by the latest in industry best
-              practices.
+              Our team brings together decades of experience in aerospace, hypobaric medicine, compliance, 
+              research, and technical education. Together, we're committed to advancing safety through 
+              practical expertise, innovative solutions, and industry-leading training.
             </h1>
 
         </div>
@@ -130,8 +129,8 @@ export default function AerospaceAboutUs() {
             </div>
 
             {/* Staff Cards */}
-            <div className="flex flex-row flex-wrap mobile:flex-col mobile:items-center gap-5 justify-start w-full">
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+            <div className="flex flex-row flex-wrap justify-between mobile:flex-col mobile:items-center gap-5 justify-start w-full">
+              <div className="">
                 <StaffCard
                   name="Sherri Ferguson"
                   title="Director of Operations"
@@ -139,7 +138,7 @@ export default function AerospaceAboutUs() {
                   targetId="sherri"
                 />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+              <div className="">
                 <StaffCard
                   name="Mechal Lavender"
                   title="Director of Education"
@@ -147,7 +146,7 @@ export default function AerospaceAboutUs() {
                   targetId="mechal"
                 />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+              <div className="">
                 <StaffCard
                   name="Sierra Laurent"
                   title="Brand and Marketing Director"
@@ -155,7 +154,9 @@ export default function AerospaceAboutUs() {
                   targetId="sierra"
                 />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+            </div>
+            <div className="flex flex-row flex-wrap mobile:flex-col mobile:items-center gap-20 justify-start w-full">
+                <div className="">
                 <StaffCard
                   name="Natasha Vleck"
                   title="Executive Assistant "
@@ -163,7 +164,7 @@ export default function AerospaceAboutUs() {
                   targetId="natasha"
                 />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+              <div className="">
                 <StaffCard
                   name="Talia Khazei"
                   title="Research Assistant "
@@ -171,7 +172,7 @@ export default function AerospaceAboutUs() {
                   targetId="talia"
                 />
               </div>
-            </div>
+              </div>
           </div>
 
         <div className="flex flex-col items-center gap-10 p-10 max-w-7xl w-full">
@@ -187,8 +188,8 @@ export default function AerospaceAboutUs() {
             </div>
 
             {/* Staff Cards */}
-            <div className="flex flex-row flex-wrap gap-5 mobile:flex-col mobile:items-center w-full">
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+            <div className="flex flex-row flex-wrap gap-5 justify-between mobile:flex-col mobile:items-center w-full">
+              <div className="">
                 <StaffCard
                   name="François Burman"
                   title="Course Instructor"
@@ -196,7 +197,7 @@ export default function AerospaceAboutUs() {
                   targetId="francois"
                 />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+              <div className="">
                   <StaffCard
                     name="Aaron Griffin"
                     title="Course Instructor"
@@ -204,12 +205,20 @@ export default function AerospaceAboutUs() {
                     targetId="aaron"
                   />
               </div>
-              <div className="w-[calc(33.333%-1.25rem)] tablet:w-[calc(50%-1.25rem)] mobile:w-[calc(50%-1.25rem)]">
+              <div className="">
                   <StaffCard
                     name="Robert Sheffield"
                     title="Course Instructor"
                     image="/images/rob-photo.png"
                     targetId="rob"
+                  />
+              </div>
+              <div className="">
+                  <StaffCard
+                    name="Bob Abrams"
+                    title="Course Instructor"
+                    image="/images/bob-photo2.png"
+                    targetId="bob"
                   />
               </div>
             </div>
@@ -225,6 +234,7 @@ export default function AerospaceAboutUs() {
           <AaronBio />
           <RobBio/>
           <FrancoisBio />
+          <BobBio/>
           
           </div>
         <ScrollToTopButton />

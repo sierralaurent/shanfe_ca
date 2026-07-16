@@ -50,9 +50,9 @@ export default function NavBar() {
           className="relative"
           onMouseEnter={() => setOpenMenu("aerospace")}
         >
-          <button className="hover:font-bold transition-all">
+          <Link href="/aerospace/aerospaceandhypobaricshome"><button className="hover:font-bold transition-all">
             Aerospace
-          </button>
+          </button></Link>
 
           {openMenu === "aerospace" && (
             <div className="absolute right-0 mt-2 w-52 bg-white shadow-lg rounded-lg flex flex-col py-2 z-50">
@@ -103,9 +103,9 @@ export default function NavBar() {
           className="relative"
           onMouseEnter={() => setOpenMenu("diving")}
         >
-          <button className="hover:font-bold transition-all">
-            Diving
-          </button>
+          <Link href="/diving/divingandhyperbaricshome"><button className="hover:font-bold transition-all">
+            Diving & Hyperbarics
+          </button></Link>
 
           {openMenu === "diving" && (
             <div className="absolute right-0 mt-2 w-52 bg-white shadow-lg rounded-lg flex flex-col py-2 z-50">

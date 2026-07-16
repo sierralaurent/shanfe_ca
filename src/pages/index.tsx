@@ -115,22 +115,22 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
 </div>
 <div className="flex items-center flex-col gap-20">
-      <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hypobaric safety and compliance.</h1>
+      <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for safety, research, education and consulting.</h1>
       <div className="flex items-center flex-col gap-5">
       <div className='flex flex-row w-full mobile:flex-col items-center gap-20'>
         <Image
               className=' '
-              src='/Icons/CAF-logo.png'
-              width={200}
-              height={200}
+              src='/Icons/CAF-defence-logo.png'
+              width={300}
+              height={300}
               alt='Canadian Armed Forces'
               />
-        <Image
+            <Image
               className=' '
-              src='/Icons/logo08.png'
-              width={500}
-              height={500}
-              alt='Hydrospace Group Incorporated'
+              src='/Icons/bell-logo.png'
+              width={200}
+              height={300}
+              alt='Seaforce'
               />
         </div>
         </div>
@@ -183,13 +183,6 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         </div>
         <div className="flex items-center flex-col gap-5">
         <div className='flex flex-row gap-20 tablet:flex-col tablet:gap-5 tablet:items-center'>
-            <Image
-              className=' '
-              src='/Icons/seaforce-logo.svg'
-              width={500}
-              height={300}
-              alt='Seaforce'
-              />
               <Image
               className=' '
               src='/Icons/vancouver-coastal-health-logo.png'

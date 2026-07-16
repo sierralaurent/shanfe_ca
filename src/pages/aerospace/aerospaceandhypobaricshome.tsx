@@ -42,7 +42,7 @@ export default function AerospaceAndHypobaricsHome() {
     <div className='flex flex-col items-center'>
       <Image
         className='w-full relative tablet:hidden'
-        src='/images/aerospace/aerospace-hero.png'
+        src='/images/aerospace/aerospace-hero2.png'
         width={2000}
         height={2000}
         alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
@@ -50,7 +50,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
         />
         <Image
         className='desktop:hidden w-full relative'
-        src='/images/shanfeHeroMobile.png'
+        src='/images/aerospace/aerospace-hero-mobile.png'
         width={2000}
         height={2000}
         alt='Hyperbaric & Hypobaric Consultancy Services - Safety is at the core of everything SHANFE offers.
@@ -77,10 +77,15 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       />
 
       <Link href="/aerospace/aerospacecourses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl font-bold text-Sky drop-shadow-lg">
-            Education
-          </span>
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+        <Image
+             className=''
+             src="/Icons/arrow-blue.png"
+             width={100}
+             height={60}
+             alt='shanfe aerospace education and courses'
+              />
+          <h1 className="text-8xl font-bold text-Sky drop-shadow-lg">Education</h1>
         </div>
       </div></Link>
     </div>
@@ -96,10 +101,15 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       />
 
       <Link href="/aerospace/aerospaceaudits"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
-        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl">
-          <span className="text-8xl font-bold text-Eggshell drop-shadow-lg">
-            Audits
-          </span>
+        <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
+        <Image
+             className=''
+             src="/Icons/arrow-eggshell.png"
+             width={100}
+             height={60}
+             alt='shanfe aerospace audits'
+              />
+          <h1 className="text-8xl font-bold text-Eggshell drop-shadow-lg">Audits</h1>
         </div>
       </div></Link>
     </div>
@@ -108,87 +118,31 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
 
 
 </div>
-<div className="flex items-center flex-col gap-20">
+<div className="flex items-center flex-col gap-10">
       <h1 className='text-4xl font-bold tablet:text-3xl'>Explore our esteemed partnerships and discover why Shanfe is the trusted choice for hyperbaric safety and compliance.</h1>
-      <div className="flex items-center flex-col gap-5">
+      <div className="flex items-center flex-col gap-10">
       <div className='flex flex-row w-full mobile:flex-col items-center gap-20'>
         <Image
               className=' '
-              src='/Icons/CAF-logo.png'
-              width={200}
+              src='/Icons/CAF-defence-logo.png'
+              width={300}
               height={200}
               alt='Canadian Armed Forces'
               />
         <Image
               className=' '
-              src='/Icons/logo08.png'
-              width={500}
+              src='/Icons/bell-logo.png'
+              width={200}
               height={500}
               alt='Hydrospace Group Incorporated'
               />
         </div>
-        </div>
-        <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-5 tablet:items-center'>
-            <Image
-              className=' '
-              src='/Icons/SVG/logo01.svg'
-              width={300}
-              height={100}
-              alt='New Foundland Health Services'
-              />
+             <div className='flex flex-col w-full tablet:flex-col tablet:gap-5 items-center'>
               <Image
               className=' '
               src='/Icons/SVG/logo02.svg'
               width={400}
               height={300}
-              alt='De Havilland Aircraft of Canada Limited'
-              />
-              
-              <Image
-              className=' '
-              src='/Icons/logo06.png'
-              width={300}
-              height={300}
-              alt='Ripleys Aquariums'
-              />
-        </div>
-        <div className='flex flex-row w-full justify-between tablet:flex-col tablet:gap-10 tablet:items-center'>
-          <Image
-              className=' '
-              src='/Icons/SVG/Logo07.svg'
-              width={300}
-              height={300}
-              alt='West End Connectors'
-              />
-              <Image
-              className=' '
-              src='/Icons/SVG/logo04.svg'
-              width={200}
-              height={300}
-              alt='DAN Divers Alert Network'
-              />
-              <Image
-              className=' '
-              src='/Icons/SVG/logo05.svg'
-              width={300}
-              height={300}
-              alt='The University of British Columbia UBC'
-              />
-        </div>
-        <div className="flex items-center flex-col gap-5">
-        <div className='flex flex-row gap-20 tablet:flex-col tablet:gap-5 tablet:items-center'>
-            <Image
-              className=' '
-              src='/Icons/seaforce-logo.svg'
-              width={500}
-              height={300}
-              alt='Seaforce'
-              />
-              <Image
-              className=' '
-              src='/Icons/vancouver-coastal-health-logo.png'
-              width={400}
-              height={100}
               alt='De Havilland Aircraft of Canada Limited'
               />
         </div>
