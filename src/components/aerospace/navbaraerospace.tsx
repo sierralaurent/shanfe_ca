@@ -41,7 +41,7 @@ export default function NavBarAerospace() {
 }, []);
 
   return (
-    <nav className="w-full flex items-center justify-between p-5 mobile:text-md mobile:p-2 text-Chocolate relative">
+    <nav className="w-full flex items-center justify-between p-5 mobile:text-sm mobile:p-2 text-Chocolate relative">
       {/* Logo */}
       <Link href="/">
         <Image

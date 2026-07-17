@@ -56,7 +56,7 @@ export default function NavBar() {
       {/* Navigation */}
       <div
         ref={menuRef}
-        className="flex items-center gap-10 mobile:gap-3 text-xl mobile:text-lg font-medium"
+        className="flex items-center gap-10 mobile:gap-2 text-xl mobile:text-sm font-medium"
       >
         {/* Aerospace */}
         <div
