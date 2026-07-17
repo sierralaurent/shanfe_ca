@@ -79,7 +79,7 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       <Link href="/aerospace/aerospacecourses"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
         <Image
-             className=''
+             className='w-[90px] mobile:w-[50px] h-auto'
              src="/Icons/arrow-blue.png"
              width={90}
              height={60}
@@ -103,12 +103,12 @@ We promote safety in hyperbaric & hypobaric environments, diving, aerospace and 
       <Link href="/aerospace/aerospaceaudits"><div className="absolute inset-0 flex items-end transition-all duration-500 group-hover:scale-[1.03]">
         <div className="w-full p-4 bg-gradient-to-t from-black/30 to-transparent rounded-b-3xl flex flex-row gap-5 items-center">
         <Image
-             className=''
-             src="/Icons/arrow-eggshell.png"
-             width={90}
-             height={60}
-             alt='shanfe aerospace audits'
-              />
+            className="w-[90px] mobile:w-[50px] h-auto"
+            src="/Icons/arrow-eggshell.png"
+            width={90}
+            height={60}
+            alt="shanfe aerospace audits"
+            />
           <h1 className="text-7xl mobile:text-5xl font-bold text-Eggshell drop-shadow-lg">Audits</h1>
         </div>
       </div></Link>

@@ -107,7 +107,7 @@ export default function AerospaceAboutUs() {
       <main className="flex flex-col items-center p-24 pt-18 mobile:p-8 bg-white scroll-smooth">
 
           <div className="flex flex-col items-center gap-8 max-w-7xl">
-            <h1 className='text-4xl font-bold'>Meet the Experts Behind Safer Aerospace Operations</h1>
+            <h1 className='text-4xl font-bold text-center'>Meet the Experts Behind Safer Aerospace Operations</h1>
             <h1 className="text-2xl text-center">
               Our team brings together decades of experience in aerospace, hypobaric medicine, compliance, 
               research, and technical education. Together, we're committed to advancing safety through 

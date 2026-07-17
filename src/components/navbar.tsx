@@ -10,6 +10,7 @@ export default function NavBar() {
 
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   const isLinkActive = (href: string) => router.pathname === href;
 
@@ -27,8 +28,20 @@ export default function NavBar() {
     };
   }, []);
 
+  useEffect(() => {
+  const checkScreen = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  checkScreen();
+
+  window.addEventListener("resize", checkScreen);
+
+  return () => window.removeEventListener("resize", checkScreen);
+}, []);
+
   return (
-    <nav className="w-full flex items-center justify-between p-5 text-Chocolate relative">
+    <nav className="w-full flex items-center justify-between p-5 mobile:p-3 text-Chocolate relative">
       {/* Logo */}
       <Link href="/">
         <Image
@@ -43,16 +56,31 @@ export default function NavBar() {
       {/* Navigation */}
       <div
         ref={menuRef}
-        className="flex items-center gap-10 text-xl mobile:text-lg font-medium"
+        className="flex items-center gap-10 mobile:gap-3 text-xl mobile:text-lg font-medium"
       >
         {/* Aerospace */}
         <div
-          className="relative"
-          onMouseEnter={() => setOpenMenu("aerospace")}
-        >
-          <Link href="/aerospace/aerospaceandhypobaricshome"><button className="hover:font-bold transition-all">
-            Aerospace
-          </button></Link>
+            className="relative"
+            onMouseEnter={() => {
+              if (!isMobile) setOpenMenu("aerospace");
+            }}
+          >
+            {isMobile ? (
+              <button
+                onClick={() =>
+                  setOpenMenu(openMenu === "aerospace" ? null : "aerospace")
+                }
+                className="hover:font-bold transition-all"
+              >
+                Aerospace
+              </button>
+            ) : (
+              <Link href="/aerospace/aerospaceandhypobaricshome">
+                <button className="hover:font-bold transition-all">
+                  Aerospace
+                </button>
+              </Link>
+            )}
 
           {openMenu === "aerospace" && (
             <div className="absolute right-0 mt-2 w-52 bg-white shadow-lg rounded-lg flex flex-col py-2 z-50">
@@ -101,11 +129,26 @@ export default function NavBar() {
         {/* Diving */}
         <div
           className="relative"
-          onMouseEnter={() => setOpenMenu("diving")}
+          onMouseEnter={() => {
+            if (!isMobile) setOpenMenu("diving");
+          }}
         >
-          <Link href="/diving/divingandhyperbaricshome"><button className="hover:font-bold transition-all">
-            Diving & Hyperbarics
-          </button></Link>
+          {isMobile ? (
+            <button
+              onClick={() =>
+                setOpenMenu(openMenu === "diving" ? null : "diving")
+              }
+              className="hover:font-bold transition-all"
+            >
+              Diving & Hyperbarics
+            </button>
+          ) : (
+            <Link href="/diving/divingandhyperbaricshome">
+              <button className="hover:font-bold transition-all">
+                Diving & Hyperbarics
+              </button>
+            </Link>
+          )}
 
           {openMenu === "diving" && (
             <div className="absolute right-0 mt-2 w-52 bg-white shadow-lg rounded-lg flex flex-col py-2 z-50">
