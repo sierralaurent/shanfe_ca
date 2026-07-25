@@ -63,14 +63,11 @@ export default function ChamberCoreCompetencyPage() {
           <h2 className="text-2xl font-semibold">Duration</h2>
           <p className="mb-4">3 days in person</p>
           </div>
-          <div className="content-center">
-          <h2 className="text-2xl font-semibold">Location</h2>
-          <p className="mb-4">St. John's, Newfoundland, Canada</p>
-          </div>
           
           <div className="content-center">
-          <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">September 19th & 21st, 2026</p>
+          <h2 className="text-2xl font-semibold">Dates & Location</h2>
+          <p className="mb-2 mt-2">September 7th to 9th, 2026, in <strong>Mississauga, Ontario, Canada</strong></p>
+          <p className="mb-4">September 23rd to 25th, 2026, in <strong>St. John's, Newfoundland, Canada</strong></p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>

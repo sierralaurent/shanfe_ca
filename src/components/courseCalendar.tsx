@@ -36,9 +36,10 @@ const courses = [
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-10-05", end: "2026-10-08", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-11-09", end: "2026-11-12", type: "Live Stream" },
   { title: "#100 - Introduction to Hyperbaric Medicine", start: "2026-12-07", end: "2026-12-10", type: "Live Stream" },
-  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-09-19", end: "2026-09-20", type: "St. John's, NL, CA" },
-  { title: "#130 - Monoplace Chamber Operator", start: "2026-09-05", end: "2026-09-05", type: "St. John's, NL, CA" },
-  { title: "#120 - Multiplace Chamber Operator", start: "2026-09-22", end: "2026-09-24", type: "St. John's, NL, CA" },
+  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-09-07", end: "2026-09-08", type: "Mississauga, NL, CA" },
+  { title: "#130 - Monoplace Chamber Operator", start: "2026-09-05", end: "2026-09-05", type: "Mississauga, ON, CA" },
+  { title: "#120 - Multiplace Chamber Operator", start: "2026-09-19", end: "2026-09-21", type: "St. John's, NL, CA" },
+  { title: "#110 - Hyperbaric Core Compentencies", start: "2026-09-23", end: "2026-09-24", type: "St. John's, NL, CA" },
 ];
 
 // Map course titles to URLs
