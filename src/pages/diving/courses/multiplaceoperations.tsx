@@ -66,7 +66,7 @@ export default function multiplaceoperations() {
           
           <div className="content-center">
           <h2 className="text-2xl font-semibold">Dates</h2>
-          <p className="mb-4">September 19th to 22nd</p>
+          <p className="mb-4">TBA</p>
           </div>
           <div className="content-center">
           <h2 className="text-2xl font-semibold ">Cost</h2>
